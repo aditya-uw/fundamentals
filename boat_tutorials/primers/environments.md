@@ -1,4 +1,4 @@
-# Minimal install of OOI virtual environment and data access on local computer
+# OOI data access for local machine
 
 Note: Some of the instructions presented below will have been a part of the setup for OOI JupyterHub access and coding. These instructions have been provided here with the purpose of being able to set up OOI data access and environment installation on your local machine without needing JupyterHub as a platform.
 
