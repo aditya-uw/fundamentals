@@ -50,16 +50,13 @@ cd ooi-data-explorations/python
 conda env create -f environment.yml
 ```
 
-To enter your newly created `ooi` environment, use the command:
-`conda activate ooi`
+To enter your newly created `ooi` environment, use the command `conda activate ooi`
 
 Once you have activated an environment, you can use the command `conda install ...` to install any specific packages not already installed. Because we created `ooi` using the environment.yml file, it will already have some packages installed. The list of packages installed can be seen in `ooi-data-explorations/python/environment.yml`
 
-While you are in the `ooi-data-explorations/python` directory, run the below command so that the packages inside can be imported from anywhere on your computer:
-`conda develop .`
+While you are in the `ooi-data-explorations/python` directory, run the command `conda develop .` so that the packages inside can be imported from anywhere on your computer.
 
-Add the newly created `ooi` environment to the list of JupyterLab kernels using the following command:
-`python -m ipykernel install --user --name=ooi`
+Add the newly created `ooi` environment to the list of JupyterLab kernels using the command `python -m ipykernel install --user --name=ooi`
 
 ## Testing the setup
 
