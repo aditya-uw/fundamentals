@@ -63,7 +63,7 @@ Add the newly created `ooi` environment to the list of JupyterLab kernels using 
 
 ## Testing the setup
 
-Now we can run the provided example notebook within the ooi-data-explorations directory to see if all the packages have been installed properly. 
+Now we can run the provided example notebook within the ooi-data-explorations directory to see if all the packages have been installed properly. You may wonder why we are copying over a notebook instead of just opening it. This will allow us to keep an original copy of the notebook in case we end up changing the notebook in testing and/or debugging. We will realize during the summer school that this is where forking GitHub repositories becomes useful! For now, let's just copy the single test notebook. 
 
 ```
 # First, go to the home directory
