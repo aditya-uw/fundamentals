@@ -47,6 +47,7 @@ parts:
   - caption: Technical primers  
     chapters:
     
+    - file: primers/environments
     - file: primers/codespaces
     - file: primers/decibel.ipynb
     
