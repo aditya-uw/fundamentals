@@ -45,6 +45,8 @@ EOT
 
 ## OOI-data-observations
 
+The OOI-data-observations GitHub repository contains code developed for accessing and processing data from multiple instruments for various data rveiews and assessments and the production of QC test limits. For setup purposes, this repository contains the `environment.yml` file that we will parse using `conda` to create a virtual environment called `ooi` with all the required packages installed. This repository also contains the test notebook we will be using called `create_annotations.ipynb` which will import the packages, load data from the [OOI Gold Copy THREDDS catalog](https://thredds.dataexplorer.oceanobservatories.org/thredds/catalog/ooigoldcopy/public/catalog.html), and perform some analysis.
+
 To download the OOI-data-observations GitHub repository, use the command:
 ```
 git clone https://github.com/oceanobservatories/ooi-data-explorations.git
@@ -88,3 +90,13 @@ cd ~/data/adhoc/testing
 Now in `~/data/adhoc/testing` launch the Jupyter notebook `creating_annotations.ipynb`. We recommend using VSCode to launch this notebook.
 
 Note: In VSCode, you will need to first install the Python and Jupyter extensions in order to select the `ooi` kernel to run your notebook.
+
+## GitHub updates
+
+The ooi-data-explorations code is a work in process and is being updated and refined regularly. To make sure
+you have the most recent code, copy/paste the following code block into a terminal:
+```
+cd ~/code/ooi-data-explorations
+git checkout master
+git pull
+```
