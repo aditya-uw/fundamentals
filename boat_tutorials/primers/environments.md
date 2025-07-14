@@ -1,10 +1,16 @@
-# OOI data access for local machine
+# Local environment setup
 
-Note: Some of the instructions presented below will have been a part of the setup for OOI JupyterHub access and coding. These instructions have been provided here with the purpose of being able to set up OOI data access and environment installation on your local machine without needing JupyterHub as a platform.
+This page explains what Conda/Mamba is and how to install it using Miniforge. 
 
 ## Miniforge
 
-JupyterHub comes with conda installed so that users can create virtual environments from the start. However, if your computer does not have conda installed, we suggest installing [Miniforge](https://github.com/conda-forge/miniforge) as a way to get access to [Conda](https://conda.io/), [Mamba](https://github.com/mamba-org/mamba) and Python, with conda-forge as default channel.  
+[Conda](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html) (or its recent cousin, [Mamba](https://mamba.readthedocs.io/en/latest/)) is an environment manager that will be useful in running the tutorials in this book on your local machine. Using conda has the following benefits:
+- Isolation of dependencies
+- Reproducibility
+- Ease of management
+- Testing and development
+
+If your computer does not have `conda` installed, we suggest installing [Miniforge](https://github.com/conda-forge/miniforge) as a way to get access to [Conda](https://conda.io/), [Mamba](https://github.com/mamba-org/mamba) and Python, with `conda-forge` as default channel.  
 Once Miniforge is installed, you should be able to use `conda` and `mamba` in your terminal.  
 
 We recommend installing Miniforge by downloading and running the provided installer for your OS from [https://conda-forge.org/download/](https://conda-forge.org/download/)  
@@ -14,34 +20,45 @@ We recommend installing Miniforge by downloading and running the provided instal
 bash Miniforge3-$(uname)-$(uname -m).sh
 ```
 You may need to `cd ...` into the folder that contains your downloaded file first.
-
-**Windows**: Download and run the Windows installer.  
-
 Follow the installer and type `yes` if prompted "Do you wish to update your shell profile to automatically initialize conda?" 
 
-## OOI data access credentials
+**Windows**: Download and run the Windows installer `.exe` file.  
+As you go through the installer, make sure you:
+1) Agree to the License Agreement
+2) Install for "Just Me (recommended)"
+3) Install in the default folder `C:\Users\[ACCOUNT_NAME]\miniforge3`
+4) Check only "Create shortcuts (supported packages only)", "Add Miniforge3 to my PATH environment variable", and "Register Miniforge3 as my default Python 3.12"
+5) Wait for installation and click on Next and Finish.
 
-In order to access data and/or metadata (e.g., calibration coefficients) collected from the OOI, we need to set our access credentials. Once you have your credentials set up on your computer, you do not need to re-run these commands.
+We recommend using Git Bash for setting up the `conda` environments and downloading the GitHub repositories so please download [Git](https://git-scm.com/downloads) if you don't have Git already. This will give you access to Git Bash which is a terminal that allows the use of `conda`, `git`, and commands like `cd` and `ls`.
 
-- If you haven't already done so, either create a user account on the [OOI Data Portal](https://ooinet.oceanobservatories.org/) (original OOI website and API server for the OOI M2M system), or use the [CILogon](https://cilogon.org/) button with an academic or Google account (login button is towards the upper right corner of the web page) to login to the portal.
-- After you login, the “Log In” text will change to your username.
-- Click on your username and then on the “User Profile” element of the drop down.
-- Copy and save the following values from the user profile: `API Username` and `API Token`.
-
-Users need to create a .netrc file in their home directory to store these access credentials. Using the below commands, create a .netrc file (replacing the `API_Username` and `API_Token` text below with the corresponding values from your login credentials for the [OOI Data Portal](https://ooinet.oceanobservatories.org/)) so that your computer can have the OOI data access credentials linked to your user account on the [OOI Data Portal](https://ooinet.oceanobservatories.org/):
+To enable `conda` to remember custom environments and set the shell profile to automatically initialize `conda` after each login, run the following lines of code in Git Bash:
 ```
-# These 2 commands can be run separately
-touch .netrc
-chmod 600 .netrc
+# Initialize the terminal to use the conda executables
+cd ~
+conda init bash
+source .bashrc
 
-# Copy-paste the below command to set your OOINet credentials 
-# (make sure to replace API_Username and API_Token below with your credentials!!)
-cat <<EOT >> .netrc
-machine ooinet.oceanobservatories.org
-login API_Username
-password API_Token
+# make sure the terminal is set to reload the conda executables the next time
+# you login (all user settings would otherwise be reset)
+touch .bash_profile
+cat <<EOT >> .bash_profile
+if [ -f $HOME/.bashrc ]; then
+source $HOME/.bashrc
+fi
+EOT
+
+# configure conda so it remembers and saves any custom user environments
+touch .condarc
+cat <<EOT >> .condarc
+envs_dirs:
+- ~/.conda/envs
+- /opt/conda/envs
 EOT
 ```
+:::{note}
+If .bashrc does not already exist, create an empty one using `touch .bashrc` and continue with the steps. `.bashrc` is meant to contain shortcut commands for the user and `source .bashrc` simply reminds the shell profile about the shortcuts. 
+:::
 
 ## OOI-data-observations
 
@@ -72,6 +89,30 @@ Add the newly created `ooi` environment to the list of JupyterLab kernels using 
 python -m ipykernel install --user --name=ooi
 ```
 
+## OOI data access credentials
+
+In order to access data and/or metadata (e.g., calibration coefficients) collected from the OOI, we need to set our access credentials. Once you have your credentials set up on your computer, you do not need to re-run these commands.
+
+- If you haven't already done so, either create a user account on the [OOI Data Portal](https://ooinet.oceanobservatories.org/) (original OOI website and API server for the OOI M2M system), or use the [CILogon](https://cilogon.org/) button with an academic or Google account (login button is towards the upper right corner of the web page) to login to the portal.
+- After you login, the “Log In” text will change to your username.
+- Click on your username and then on the “User Profile” element of the drop down.
+- Copy and save the following values from the user profile: `API Username` and `API Token`.
+
+Users need to create a .netrc file in their home directory to store these access credentials. Using the below commands, create a .netrc file (replacing the `API_Username` and `API_Token` text below with the corresponding values from your login credentials for the [OOI Data Portal](https://ooinet.oceanobservatories.org/)) so that your computer can have the OOI data access credentials linked to your user account on the [OOI Data Portal](https://ooinet.oceanobservatories.org/):
+```
+# These 2 commands can be run separately
+touch .netrc
+chmod 600 .netrc
+
+# Copy-paste the below command to set your OOINet credentials 
+# (make sure to replace API_Username and API_Token below with your credentials!!)
+cat <<EOT >> .netrc
+machine ooinet.oceanobservatories.org
+login API_Username
+password API_Token
+EOT
+```
+
 ## Testing the setup
 
 Now we can run the provided example notebook within the ooi-data-explorations directory to see if all the packages have been installed properly. You may wonder why we are copying over a notebook instead of just opening it. This will allow us to keep an original copy of the notebook in case we end up changing the notebook in testing and/or debugging. We will realize during the summer school that this is where forking GitHub repositories becomes useful! For now, let's just copy the single test notebook. 
@@ -89,7 +130,9 @@ cd ~/data/adhoc/testing
 
 Now in `~/data/adhoc/testing` launch the Jupyter notebook `creating_annotations.ipynb`. We recommend using VSCode to launch this notebook.
 
-Note: In VSCode, you will need to first install the Python and Jupyter extensions in order to select the `ooi` kernel to run your notebook.
+:::{note}
+In VSCode, you will need to first install the Python and Jupyter extensions in order to select the `ooi` kernel to run your notebook.
+:::
 
 ## GitHub updates
 
