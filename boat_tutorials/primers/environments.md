@@ -27,7 +27,7 @@ You may need to `cd ...` into the folder that contains your downloaded file firs
 :width: 900px
 :align: left
 ```
-
+<br/><br/>
 After running the above commands, complete the following steps from the installer:
 
 1) Agree to license terms and confirm the default location for install.
@@ -37,7 +37,7 @@ After running the above commands, complete the following steps from the installe
 :width: 900px
 :align: left
 ```
-
+<br/><br/>
 Now Miniforge will begin installing the required packages and solvers.
 
 2) Type `yes` if prompted "Do you wish to update your shell profile to automatically initialize conda?" 
@@ -47,7 +47,7 @@ Now Miniforge will begin installing the required packages and solvers.
 :width: 900px
 :align: left
 ```
-
+<br/><br/>
 3) After Miniforge has finished installing, make sure to close and re-open the terminal for changes to take effect.
 
 (primers-miniforge_setup4_macOS)=
@@ -55,7 +55,7 @@ Now Miniforge will begin installing the required packages and solvers.
 :width: 900px
 :align: left
 ```
-
+<br/><br/>
 **Windows**: Download and run the Windows installer `.exe` file.  
 
 (primers-miniforge_setup1_windows)=
