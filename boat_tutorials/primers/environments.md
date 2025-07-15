@@ -173,6 +173,7 @@ When the Git Bash app appears, open it to launch Git Bash terminal.
 :align: center
 ```
 <br>
+
 Windows users will use this Git Bash terminal later to setup `conda`, create virtual environments, and `clone` Git repositories.
 
 ## Conda installation via Miniforge
