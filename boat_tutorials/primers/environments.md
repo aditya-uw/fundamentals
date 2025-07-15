@@ -134,25 +134,26 @@ Be sure to close and re-open GitBash after these commands for the changes to tak
 
 (primers-miniforge_setup8_windows)=
 ```{image} ../images/primers/miniforge_setup8_windows.png
-:width: 400px
+:width: 600px
 :align: center
 ```
 <br>
 
 (primers-miniforge_setup9_windows)=
 ```{image} ../images/primers/miniforge_setup9_windows.png
-:width: 400px
+:width: 600px
 :align: center
 ```
 <br>
+
+Once Git Bash has been re-opened, it should show you on start-up that you are in the `base` environment.
 
 (primers-miniforge_setup10_windows)=
 ```{image} ../images/primers/miniforge_setup10_windows.png
-:width: 400px
+:width: 600px
 :align: center
 ```
 <br>
-
 
 
 ## OOI-data-observations
