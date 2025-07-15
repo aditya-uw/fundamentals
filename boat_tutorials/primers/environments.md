@@ -25,7 +25,7 @@ You may need to `cd ...` into the folder that contains your downloaded file firs
 (primers-miniforge_setup1_macOS)=
 ```{image} ../images/primers/miniforge_setup1_macOS.png
 :width: 600px
-:align: left
+:align: center
 ```
 <br><br><br><br>
 After running the above commands, complete the following steps from the installer:
@@ -35,7 +35,7 @@ After running the above commands, complete the following steps from the installe
 (primers-miniforge_setup2_macOS)=
 ```{image} ../images/primers/miniforge_setup2_macOS.png
 :width: 600px
-:align: left
+:align: center
 ```
 <br><br>
 After pressing ENTER, Miniforge will begin installing the required packages and solvers.
@@ -45,7 +45,7 @@ After pressing ENTER, Miniforge will begin installing the required packages and 
 (primers-miniforge_setup3_macOS)=
 ```{image} ../images/primers/miniforge_setup3_macOS.png
 :width: 600px
-:align: left
+:align: center
 ```
 <br><br>
 Automatically initializing `conda` makes it easier to use.
@@ -55,7 +55,7 @@ Automatically initializing `conda` makes it easier to use.
 (primers-miniforge_setup4_macOS)=
 ```{image} ../images/primers/miniforge_setup4_macOS.png
 :width: 600px
-:align: left
+:align: center
 ```
 <br><br>
 
