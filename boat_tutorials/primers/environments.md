@@ -60,7 +60,7 @@ Now Miniforge will begin installing the required packages and solvers.
 
 (primers-miniforge_setup1_windows)=
 ```{image} ../images/primers/miniforge_setup1_windows.png
-:width: 600px
+:width: 400px
 :align: center
 ```
 
@@ -70,7 +70,7 @@ As you go through the installer, complete the following steps:
 
 (primers-miniforge_setup2_windows)=
 ```{image} ../images/primers/miniforge_setup2_windows.png
-:width: 600px
+:width: 400px
 :align: center
 ```
 
@@ -78,7 +78,7 @@ As you go through the installer, complete the following steps:
 
 (primers-miniforge_setup3_windows)=
 ```{image} ../images/primers/miniforge_setup3_windows.png
-:width: 600px
+:width: 400px
 :align: center
 ```
 
@@ -86,29 +86,23 @@ As you go through the installer, complete the following steps:
 
 (primers-miniforge_setup4_windows)=
 ```{image} ../images/primers/miniforge_setup4_windows.png
-:width: 600px
+:width: 400px
 :align: center
 ```
 
 4) Check the following options to ensure `conda`/`mamba` can be accessed from Windows terminal
 
-(primers-miniforge_setup4_windows)=
-```{image} ../images/primers/miniforge_setup4_windows.png
-:width: 600px
+(primers-miniforge_setup5_windows)=
+```{image} ../images/primers/miniforge_setup5_windows.png
+:width: 400px
 :align: center
 ```
 
 5) Wait for installation and click on Next and Finish.
 
-(primers-miniforge_setup5_windows)=
-```{image} ../images/primers/miniforge_setup5_windows.png
-:width: 600px
-:align: center
-```
-
 (primers-miniforge_setup6_windows)=
 ```{image} ../images/primers/miniforge_setup6_windows.png
-:width: 600px
+:width: 400px
 :align: center
 ```
 
