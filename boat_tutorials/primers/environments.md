@@ -1,8 +1,8 @@
 # Local environment setup
 
-This page explains what Conda/Mamba is and how to install it using Miniforge. 
+This page explains what Conda/Mamba is and how to install it using Miniforge. After this, the page shows how to create a `conda` environment and will show how to test that the environment is working by using it to run a Jupyter notebook.
 
-## Miniforge
+## Conda installation via Miniforge
 
 [Conda](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html) (or its recent cousin, [Mamba](https://mamba.readthedocs.io/en/latest/)) is an environment manager that will be useful in running the tutorials in this book on your local machine. Using conda has the following benefits:
 - Isolation of dependencies
@@ -20,7 +20,31 @@ We recommend installing Miniforge by downloading and running the provided instal
 bash Miniforge3-$(uname)-$(uname -m).sh
 ```
 You may need to `cd ...` into the folder that contains your downloaded file first.
-Follow the installer and type `yes` if prompted "Do you wish to update your shell profile to automatically initialize conda?" 
+
+(primers-miniforge_setup1_macOS)=
+```{image} ../images/primers/miniforge_setup1_macOS.png
+:width: 600px
+:align: center
+```
+
+Agree to license terms and confirm the default location for install.
+
+(primers-miniforge_setup2_macOS)=
+```{image} ../images/primers/miniforge_setup2_macOS.png
+:width: 600px
+:align: center
+```
+
+Now Miniforge will begin installing the required packages and solvers.
+Type `yes` if prompted "Do you wish to update your shell profile to automatically initialize conda?" 
+
+(primers-miniforge_setup3_macOS)=
+```{image} ../images/primers/miniforge_setup3_macOS.png
+:width: 600px
+:align: center
+```
+
+After Miniforge has finished installing, make sure to close and re-open the terminal for changes to take effect.
 
 **Windows**: Download and run the Windows installer `.exe` file.  
 As you go through the installer, make sure you:
