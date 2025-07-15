@@ -19,6 +19,7 @@ We recommend installing Miniforge by downloading and running the provided instal
 ```
 bash Miniforge3-$(uname)-$(uname -m).sh
 ```
+
 You may need to `cd ...` into the folder that contains your downloaded file first.
 
 (primers-miniforge_setup1_macOS)=
@@ -27,7 +28,8 @@ You may need to `cd ...` into the folder that contains your downloaded file firs
 :align: left
 ```
 
-Agree to license terms and confirm the default location for install.
+After running the above commands, complete the following steps from the installer:
+1) Agree to license terms and confirm the default location for install.
 
 (primers-miniforge_setup2_macOS)=
 ```{image} ../images/primers/miniforge_setup2_macOS.png
@@ -36,7 +38,7 @@ Agree to license terms and confirm the default location for install.
 ```
 
 Now Miniforge will begin installing the required packages and solvers.
-Type `yes` if prompted "Do you wish to update your shell profile to automatically initialize conda?" 
+2) Type `yes` if prompted "Do you wish to update your shell profile to automatically initialize conda?" 
 
 (primers-miniforge_setup3_macOS)=
 ```{image} ../images/primers/miniforge_setup3_macOS.png
@@ -44,7 +46,7 @@ Type `yes` if prompted "Do you wish to update your shell profile to automaticall
 :align: left
 ```
 
-After Miniforge has finished installing, make sure to close and re-open the terminal for changes to take effect.
+3) After Miniforge has finished installing, make sure to close and re-open the terminal for changes to take effect.
 
 (primers-miniforge_setup4_macOS)=
 ```{image} ../images/primers/miniforge_setup4_macOS.png
