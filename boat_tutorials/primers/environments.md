@@ -13,6 +13,15 @@ Installing Git requires administrator access to your computer.
 
 **Mac & Linux**: Terminals come pre-installed with Git so there are no steps required to install Git.
 
+To launch terminal, go to Spotlight Search or Applications and find the Terminal app to open.
+
+(primers-git_launch1_macOS)=
+```{image} ../images/primers/git_launch1_macOS.png
+:width: 400px
+:align: center
+```
+<br>
+
 **Windows**: [Download](https://git-scm.com/downloads) and run the Windows installer `.exe` file.  
 
 After double-clicking on the installer `.exe` file, you will first be prompted to enter your administrator password.
