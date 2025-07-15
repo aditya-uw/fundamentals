@@ -11,7 +11,7 @@ This page explains what Git, Conda, and Mamba are and how to install them. After
 Installing Git requires administrator access to your computer.
 :::
 
-### **Mac & Linux**
+### Mac & Linux
 
 Terminals come pre-installed with Git so there are no steps required to install Git.
 
@@ -24,7 +24,7 @@ To launch terminal, go to Spotlight Search or Applications and find the Terminal
 ```
 <br>
 
-### **Windows**
+### Windows
 
 [Download](https://git-scm.com/downloads) and run the Windows installer `.exe` file.  
 
@@ -193,7 +193,7 @@ Once Miniforge is installed, you should be able to use `conda` and `mamba` in yo
 
 We recommend installing Miniforge by downloading and running the provided installer for your OS from [https://conda-forge.org/download/](https://conda-forge.org/download/)  
 
-### **Mac & Linux**
+### Mac & Linux
 
 Download the installer and open your computer's terminal to run the command:
 
@@ -240,7 +240,7 @@ Automatically initializing `conda` makes it easier to use.
 ```
 <br>
 
-### **Windows**
+### Windows
 
 Download and run the Windows installer `.exe` file.  
 
