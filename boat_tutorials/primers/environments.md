@@ -17,7 +17,7 @@ To launch terminal, go to Spotlight Search or Applications and find the Terminal
 
 (primers-git_launch1_macOS)=
 ```{image} ../images/primers/git_launch1_macOS.png
-:width: 400px
+:width: 100px
 :align: center
 ```
 <br>
