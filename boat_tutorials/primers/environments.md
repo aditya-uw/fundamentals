@@ -147,6 +147,24 @@ Git will now begin to install and show a progress bar.
 
 Downloading Git will provide users with a new Git Bash terminal which recommend for setting up the `conda` environments and downloading the Git repositories as it allows the use of `conda` and `git`, and commands like `cd` and `ls`.
 
+To launch Git Bash, go to the search bar in the Windows task bar and type "Git Bash".
+
+(primers-git_launch1_windows)=
+```{image} ../images/primers/git_launch1_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+When the Git Bash app appears, open it to launch Git Bash terminal.
+
+(primers-git_launch2_windows)=
+```{image} ../images/primers/git_launch2_windows.png
+:width: 400px
+:align: center
+```
+<br>
+Windows users will use this Git Bash terminal later to setup `conda`, create virtual environments, and `clone` Git repositories.
 
 ## Conda installation via Miniforge
 
