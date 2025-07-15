@@ -1,6 +1,6 @@
 # Local environment setup
 
-This page explains what Git, Conda, and Mamba are and how to install them. After installing these softwares, the page will show how to test use each one towards running a Jupyter notebook. Instructions have been inspired from [similar documentation in other domain](https://biapol.github.io/blog/mara_lampert/getting_started_with_miniforge_and_python/readme.html) 
+This page explains Git, Conda, and Mamba and how to install them. After installing these softwares, the page will show how to use each one towards running a Jupyter notebook. Instructions have been inspired from [similar documentation in other domain](https://biapol.github.io/blog/mara_lampert/getting_started_with_miniforge_and_python/readme.html) 
 
 
 ## Installing Git
@@ -195,11 +195,15 @@ We recommend installing Miniforge by downloading and running the provided instal
 
 ### Mac & Linux
 
-Download the installer and open your computer's terminal to run the command:
+Download the installer `.sh` file and open your computer's terminal to run the command:
 
 ```
 bash Miniforge3-$(uname)-$(uname -m).sh
 ```
+
+:::{warning}
+At the time of writing this documentation, the installer for macOS arm64 has yet to update its file name to `Miniforge3-Darwin-arm64.sh`. If you receive `bash: Miniforge3-Darwin-arm64.sh: No such file or directory`, run the command `bash Miniforge3-MacOSX-$(uname -m).sh`.
+:::
 
 You may need to `cd ...` into the folder that contains your downloaded file first.
 
@@ -339,8 +343,15 @@ Once Git Bash has been re-opened, it should show you on start-up that you are in
 ```
 <br>
 
-
 ## Testing the setup
+
+:::{note}
+Following the above setup instructions, Git Bash for Windows and Terminal for macOS & Linux will now work similarly with functionalities such as `conda`/`mamba`, `git`, `cd`, and `ls`. These programs will be referred to simply as "terminal" and the following instructions will be presented as applicable for an OS.
+:::
+
+### Creating a `conda` environment
+
+
 
 Now we can run the provided example notebook within the ooi-data-explorations directory to see if all the packages have been installed properly. You may wonder why we are copying over a notebook instead of just opening it. This will allow us to keep an original copy of the notebook in case we end up changing the notebook in testing and/or debugging. We will realize during the summer school that this is where forking GitHub repositories becomes useful! For now, let's just copy the single test notebook. 
 
