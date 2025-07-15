@@ -236,6 +236,7 @@ After pressing ENTER, Miniforge will begin installing the required packages and 
 :align: center
 ```
 <br>
+
 Automatically initializing `conda` makes it easier to use.
 
 3) After Miniforge has finished installing, make sure to close and re-open the terminal for changes to take effect.
