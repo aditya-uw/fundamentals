@@ -1,6 +1,124 @@
 # Local environment setup
 
-This page explains what Conda/Mamba is and how to install it using Miniforge. After this, the page shows how to create a `conda` environment and will show how to test that the environment is working by using it to run a Jupyter notebook. Instructions have been inspired from [similar documentation in other domain](https://biapol.github.io/blog/mara_lampert/getting_started_with_miniforge_and_python/readme.html) 
+This page explains what Git, Conda, and Mamba are and how to install them. After installing these softwares, the page will show how to test use each one towards running a Jupyter notebook. Instructions have been inspired from [similar documentation in other domain](https://biapol.github.io/blog/mara_lampert/getting_started_with_miniforge_and_python/readme.html) 
+
+
+## Installing Git
+
+[Git](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F) is a version control system that is designed to track changes in files stored within repositories. [GitHub](https://docs.github.com/en/get-started/start-your-journey) offers a platform for storing and collaborating on various Git repositories. 
+
+:::{caution}
+Installing Git requires administrator access to your computer.
+:::
+
+**Mac & Linux**: Terminals come pre-installed with Git so there are no steps required to install Git.
+
+**Windows**: [Download](https://git-scm.com/downloads) and run the Windows installer `.exe` file.  
+
+After double-clicking on the installer `.exe` file, you should see the Git Setup window.
+
+(primers-git_setup1_windows)=
+```{image} ../images/primers/git_setup1_windows.png
+:width: 400px
+:align: center
+```
+<br>
+Read the license and click on "Next" to continue
+
+(primers-git_setup2_windows)=
+```{image} ../images/primers/git_setup2_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+(primers-git_setup3_windows)=
+```{image} ../images/primers/git_setup3_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+(primers-git_setup4_windows)=
+```{image} ../images/primers/git_setup4_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+(primers-git_setup5_windows)=
+```{image} ../images/primers/git_setup5_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+(primers-git_setup6_windows)=
+```{image} ../images/primers/git_setup6_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+(primers-git_setup7_windows)=
+```{image} ../images/primers/git_setup7_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+(primers-git_setup8_windows)=
+```{image} ../images/primers/git_setup8_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+(primers-git_setup9_windows)=
+```{image} ../images/primers/git_setup9_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+(primers-git_setup10_windows)=
+```{image} ../images/primers/git_setup10_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+(primers-git_setup11_windows)=
+```{image} ../images/primers/git_setup11_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+(primers-git_setup12_windows)=
+```{image} ../images/primers/git_setup12_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+(primers-git_setup13_windows)=
+```{image} ../images/primers/git_setup13_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+(primers-git_setup14_windows)=
+```{image} ../images/primers/git_setup14_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+
+Downloading Git will provide users with a new Git Bash terminal which recommend for setting up the `conda` environments and downloading the Git repositories as it allows the use of `conda` and `git`, and commands like `cd` and `ls`.
+
 
 ## Conda installation via Miniforge
 
@@ -122,7 +240,7 @@ As you go through the installer, complete the following steps:
 ```
 <br>
 
-We recommend using Git Bash for setting up the `conda` environments and downloading the GitHub repositories so please [download Git](https://git-scm.com/downloads) if you don't have Git already. This will give you access to Git Bash which is a terminal that allows the use of `conda`, `git`, and commands like `cd` and `ls`.
+Miniforge has been installed on Windows!
 
 To set Git Bash to automatically initialize `conda`, run the following commands in Git Bash:
 ```
@@ -155,59 +273,6 @@ Once Git Bash has been re-opened, it should show you on start-up that you are in
 ```
 <br>
 
-
-## OOI-data-observations
-
-The OOI-data-observations GitHub repository contains code developed for accessing and processing data from multiple instruments for various data rveiews and assessments and the production of QC test limits. For setup purposes, this repository contains the `environment.yml` file that we will parse using `conda` to create a virtual environment called `ooi` with all the required packages installed. This repository also contains the test notebook we will be using called `create_annotations.ipynb` which will import the packages, load data from the publicly available [OOI Gold Copy THREDDS catalog](https://thredds.dataexplorer.oceanobservatories.org/thredds/catalog/ooigoldcopy/public/catalog.html), and perform some analysis.
-
-To download the OOI-data-observations GitHub repository, use the command:
-```
-git clone https://github.com/oceanobservatories/ooi-data-explorations.git
-```
-
-To create the `ooi` environment, after installing Miniforge and downloading the above repository, use the commands:
-```
-cd ooi-data-explorations/python
-conda env create -f environment.yml
-```
-
-To enter your newly created `ooi` environment, use the command:
-```
-conda activate ooi
-```
-
-Once you have activated an environment, you can use the command `conda install ...` to install any specific packages not already installed. Because we created `ooi` using the environment.yml file, it will already have some packages installed. The list of packages installed can be seen in `ooi-data-explorations/python/environment.yml`
-
-While you are in the `ooi-data-explorations/python` directory, run the command `conda develop .` so that the packages inside can be imported from anywhere on your computer.
-
-Add the newly created `ooi` environment to the list of JupyterLab kernels using the command:
-```
-python -m ipykernel install --user --name=ooi
-```
-
-## OOI data access credentials
-
-In order to access data and/or metadata (e.g., calibration coefficients) collected from the OOI, we need to set our access credentials. Once you have your credentials set up on your computer, you do not need to re-run these commands.
-
-- If you haven't already done so, either create a user account on the [OOI Data Portal](https://ooinet.oceanobservatories.org/) (original OOI website and API server for the OOI M2M system), or use the [CILogon](https://cilogon.org/) button with an academic or Google account (login button is towards the upper right corner of the web page) to login to the portal.
-- After you login, the “Log In” text will change to your username.
-- Click on your username and then on the “User Profile” element of the drop down.
-- Copy and save the following values from the user profile: `API Username` and `API Token`.
-
-Users need to create a .netrc file in their home directory to store these access credentials. Using the below commands, create a .netrc file (replacing the `API_Username` and `API_Token` text below with the corresponding values from your login credentials for the [OOI Data Portal](https://ooinet.oceanobservatories.org/)) so that your computer can have the OOI data access credentials linked to your user account on the [OOI Data Portal](https://ooinet.oceanobservatories.org/):
-```
-# These 2 commands can be run separately
-touch .netrc
-chmod 600 .netrc
-
-# Copy-paste the below command to set your OOINet credentials 
-# (make sure to replace API_Username and API_Token below with your credentials!!)
-cat <<EOT >> .netrc
-machine ooinet.oceanobservatories.org
-login API_Username
-password API_Token
-EOT
-```
 
 ## Testing the setup
 
