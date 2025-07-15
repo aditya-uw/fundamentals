@@ -15,7 +15,9 @@ Once Miniforge is installed, you should be able to use `conda` and `mamba` in yo
 
 We recommend installing Miniforge by downloading and running the provided installer for your OS from [https://conda-forge.org/download/](https://conda-forge.org/download/)  
 
-**Mac & Linux**: Download the installer and open your computer's terminal to run the command:
+### Mac & Linux: 
+
+Download the installer and open your computer's terminal to run the command:
 ```
 bash Miniforge3-$(uname)-$(uname -m).sh
 ```
@@ -27,7 +29,7 @@ You may need to `cd ...` into the folder that contains your downloaded file firs
 :width: 900px
 :align: left
 ```
-<br/><br/>
+<br><br>
 
 After running the above commands, complete the following steps from the installer:
 
