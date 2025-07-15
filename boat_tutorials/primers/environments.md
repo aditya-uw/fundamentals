@@ -202,7 +202,10 @@ bash Miniforge3-$(uname)-$(uname -m).sh
 ```
 
 :::{warning}
-At the time of writing this documentation, the installer file for macOS arm64 is named `Miniforge3-MacOSX-arm64.sh` while the `uname` command returns `Darwin`. So performing the above command results in `bash: Miniforge3-Darwin-arm64.sh: No such file or directory`. To fix this, simply run `bash Miniforge3-MacOSX-arm64.sh` (i.e., run `bash` on the installer's file name).
+At the time of writing this documentation, the installer file for macOS arm64 is named `Miniforge3-MacOSX-arm64.sh` while the `uname` command returns `Darwin`. So performing the above command results in `bash: Miniforge3-Darwin-arm64.sh: No such file or directory`. To fix this, simply run:
+```
+bash Miniforge3-MacOSX-arm64.sh` # (i.e., run `bash` on the installer's file name)
+```
 :::
 
 You may need to `cd ...` into the folder that contains your downloaded file first.
