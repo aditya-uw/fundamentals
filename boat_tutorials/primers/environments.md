@@ -29,7 +29,8 @@ You may need to `cd ...` into the folder that contains your downloaded file firs
 :width: 900px
 :align: left
 ```
-<br><br>
+<br>
+<br>
 
 After running the above commands, complete the following steps from the installer:
 
