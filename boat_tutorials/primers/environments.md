@@ -11,7 +11,9 @@ This page explains what Git, Conda, and Mamba are and how to install them. After
 Installing Git requires administrator access to your computer.
 :::
 
-**Mac & Linux**: Terminals come pre-installed with Git so there are no steps required to install Git.
+### **Mac & Linux**
+
+Terminals come pre-installed with Git so there are no steps required to install Git.
 
 To launch terminal, go to Spotlight Search or Applications and find the Terminal app to open.
 
@@ -22,7 +24,9 @@ To launch terminal, go to Spotlight Search or Applications and find the Terminal
 ```
 <br>
 
-**Windows**: [Download](https://git-scm.com/downloads) and run the Windows installer `.exe` file.  
+### **Windows**
+
+[Download](https://git-scm.com/downloads) and run the Windows installer `.exe` file.  
 
 After double-clicking on the installer `.exe` file, you will first be prompted to enter your administrator password.
 Once the setup window has opened, complete the following steps:
@@ -189,7 +193,10 @@ Once Miniforge is installed, you should be able to use `conda` and `mamba` in yo
 
 We recommend installing Miniforge by downloading and running the provided installer for your OS from [https://conda-forge.org/download/](https://conda-forge.org/download/)  
 
-**Mac & Linux**: Download the installer and open your computer's terminal to run the command:
+### **Mac & Linux**
+
+Download the installer and open your computer's terminal to run the command:
+
 ```
 bash Miniforge3-$(uname)-$(uname -m).sh
 ```
@@ -233,7 +240,9 @@ Automatically initializing `conda` makes it easier to use.
 ```
 <br>
 
-**Windows**: Download and run the Windows installer `.exe` file.  
+### **Windows**
+
+Download and run the Windows installer `.exe` file.  
 
 (primers-miniforge_setup1_windows)=
 ```{image} ../images/primers/miniforge_setup1_windows.png
@@ -298,7 +307,8 @@ As you go through the installer, complete the following steps:
 
 Miniforge has been installed on Windows!
 
-To set Git Bash to automatically initialize `conda`, run the following commands in Git Bash:
+Now for Windows, to set Git Bash to automatically initialize `conda`, run the following commands in Git Bash:
+
 ```
 conda init bash
 conda config --set auto_activate_base true
