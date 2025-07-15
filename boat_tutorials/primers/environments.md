@@ -29,6 +29,7 @@ You may need to `cd ...` into the folder that contains your downloaded file firs
 ```
 
 After running the above commands, complete the following steps from the installer:
+
 1) Agree to license terms and confirm the default location for install.
 
 (primers-miniforge_setup2_macOS)=
@@ -38,6 +39,7 @@ After running the above commands, complete the following steps from the installe
 ```
 
 Now Miniforge will begin installing the required packages and solvers.
+
 2) Type `yes` if prompted "Do you wish to update your shell profile to automatically initialize conda?" 
 
 (primers-miniforge_setup3_macOS)=
@@ -55,12 +57,60 @@ Now Miniforge will begin installing the required packages and solvers.
 ```
 
 **Windows**: Download and run the Windows installer `.exe` file.  
-As you go through the installer, make sure you:
+
+(primers-miniforge_setup1_windows)=
+```{image} ../images/primers/miniforge_setup1_windows.png
+:width: 600px
+:align: center
+```
+
+As you go through the installer, complete the following steps:
+
 1) Agree to the License Agreement
+
+(primers-miniforge_setup2_windows)=
+```{image} ../images/primers/miniforge_setup2_windows.png
+:width: 600px
+:align: center
+```
+
 2) Install for "Just Me (recommended)"
-3) Install in the default folder `C:\Users\[ACCOUNT_NAME]\miniforge3`
-4) Check only "Create shortcuts (supported packages only)", "Add Miniforge3 to my PATH environment variable", and "Register Miniforge3 as my default Python 3.12"
+
+(primers-miniforge_setup3_windows)=
+```{image} ../images/primers/miniforge_setup3_windows.png
+:width: 600px
+:align: center
+```
+
+3) Install in the default folder
+
+(primers-miniforge_setup4_windows)=
+```{image} ../images/primers/miniforge_setup4_windows.png
+:width: 600px
+:align: center
+```
+
+4) Check the following options to ensure `conda`/`mamba` can be accessed from Windows terminal
+
+(primers-miniforge_setup4_windows)=
+```{image} ../images/primers/miniforge_setup4_windows.png
+:width: 600px
+:align: center
+```
+
 5) Wait for installation and click on Next and Finish.
+
+(primers-miniforge_setup5_windows)=
+```{image} ../images/primers/miniforge_setup5_windows.png
+:width: 600px
+:align: center
+```
+
+(primers-miniforge_setup6_windows)=
+```{image} ../images/primers/miniforge_setup6_windows.png
+:width: 600px
+:align: center
+```
 
 We recommend using Git Bash for setting up the `conda` environments and downloading the GitHub repositories so please download [Git](https://git-scm.com/downloads) if you don't have Git already. This will give you access to Git Bash which is a terminal that allows the use of `conda`, `git`, and commands like `cd` and `ls`.
 
