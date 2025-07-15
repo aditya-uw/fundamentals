@@ -1,6 +1,6 @@
 # Local environment setup
 
-This page explains what Conda/Mamba is and how to install it using Miniforge. After this, the page shows how to create a `conda` environment and will show how to test that the environment is working by using it to run a Jupyter notebook.
+This page explains what Conda/Mamba is and how to install it using Miniforge. After this, the page shows how to create a `conda` environment and will show how to test that the environment is working by using it to run a Jupyter notebook. Instructions have been inspired from [similar documentation in other domain](https://biapol.github.io/blog/mara_lampert/getting_started_with_miniforge_and_python/readme.html) 
 
 ## Conda installation via Miniforge
 
@@ -66,6 +66,7 @@ Automatically initializing `conda` makes it easier to use.
 :width: 400px
 :align: center
 ```
+<br>
 
 As you go through the installer, complete the following steps:
 
@@ -76,6 +77,7 @@ As you go through the installer, complete the following steps:
 :width: 400px
 :align: center
 ```
+<br>
 
 2) Install for "Just Me (recommended)"
 
@@ -84,6 +86,7 @@ As you go through the installer, complete the following steps:
 :width: 400px
 :align: center
 ```
+<br>
 
 3) Install in the default folder
 
@@ -92,6 +95,7 @@ As you go through the installer, complete the following steps:
 :width: 400px
 :align: center
 ```
+<br>
 
 4) Check the following options to ensure `conda`/`mamba` can be accessed from Windows terminal
 
@@ -100,6 +104,7 @@ As you go through the installer, complete the following steps:
 :width: 400px
 :align: center
 ```
+<br>
 
 5) Wait for installation and click on Next and Finish.
 
@@ -108,36 +113,47 @@ As you go through the installer, complete the following steps:
 :width: 400px
 :align: center
 ```
+<br>
 
-We recommend using Git Bash for setting up the `conda` environments and downloading the GitHub repositories so please download [Git](https://git-scm.com/downloads) if you don't have Git already. This will give you access to Git Bash which is a terminal that allows the use of `conda`, `git`, and commands like `cd` and `ls`.
-
-To enable `conda` to remember custom environments and set the shell profile to automatically initialize `conda` after each login, run the following lines of code in Git Bash:
+(primers-miniforge_setup7_windows)=
+```{image} ../images/primers/miniforge_setup7_windows.png
+:width: 400px
+:align: center
 ```
-# Initialize the terminal to use the conda executables
-cd ~
+<br>
+
+We recommend using Git Bash for setting up the `conda` environments and downloading the GitHub repositories so please [download Git](https://git-scm.com/downloads) if you don't have Git already. This will give you access to Git Bash which is a terminal that allows the use of `conda`, `git`, and commands like `cd` and `ls`.
+
+To set Git Bash to automatically initialize `conda`, run the following commands in Git Bash:
+```
 conda init bash
-source .bashrc
-
-# make sure the terminal is set to reload the conda executables the next time
-# you login (all user settings would otherwise be reset)
-touch .bash_profile
-cat <<EOT >> .bash_profile
-if [ -f $HOME/.bashrc ]; then
-source $HOME/.bashrc
-fi
-EOT
-
-# configure conda so it remembers and saves any custom user environments
-touch .condarc
-cat <<EOT >> .condarc
-envs_dirs:
-- ~/.conda/envs
-- /opt/conda/envs
-EOT
+conda config --set auto_activate_base true
 ```
-:::{note}
-If .bashrc does not already exist, create an empty one using `touch .bashrc` and continue with the steps. `.bashrc` is meant to contain shortcut commands for the user and `source .bashrc` simply reminds the shell profile about the shortcuts. 
-:::
+
+Be sure to close and re-open GitBash after these commands for the changes to take effect.
+
+(primers-miniforge_setup8_windows)=
+```{image} ../images/primers/miniforge_setup8_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+(primers-miniforge_setup9_windows)=
+```{image} ../images/primers/miniforge_setup9_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+(primers-miniforge_setup10_windows)=
+```{image} ../images/primers/miniforge_setup10_windows.png
+:width: 400px
+:align: center
+```
+<br>
+
+
 
 ## OOI-data-observations
 
