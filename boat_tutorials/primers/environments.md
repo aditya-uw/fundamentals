@@ -23,16 +23,16 @@ You may need to `cd ...` into the folder that contains your downloaded file firs
 
 (primers-miniforge_setup1_macOS)=
 ```{image} ../images/primers/miniforge_setup1_macOS.png
-:width: 600px
-:align: center
+:width: 900px
+:align: left
 ```
 
 Agree to license terms and confirm the default location for install.
 
 (primers-miniforge_setup2_macOS)=
 ```{image} ../images/primers/miniforge_setup2_macOS.png
-:width: 600px
-:align: center
+:width: 900px
+:align: left
 ```
 
 Now Miniforge will begin installing the required packages and solvers.
@@ -40,11 +40,17 @@ Type `yes` if prompted "Do you wish to update your shell profile to automaticall
 
 (primers-miniforge_setup3_macOS)=
 ```{image} ../images/primers/miniforge_setup3_macOS.png
-:width: 600px
-:align: center
+:width: 900px
+:align: left
 ```
 
 After Miniforge has finished installing, make sure to close and re-open the terminal for changes to take effect.
+
+(primers-miniforge_setup4_macOS)=
+```{image} ../images/primers/miniforge_setup4_macOS.png
+:width: 900px
+:align: left
+```
 
 **Windows**: Download and run the Windows installer `.exe` file.  
 As you go through the installer, make sure you:
