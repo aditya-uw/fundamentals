@@ -347,7 +347,7 @@ Once Git Bash has been re-opened, it should show you on start-up that you are in
 ```
 <br>
 
-## Testing the setup
+## Creating a conda environment for running tutorials
 
 :::{note}
 Following the above setup instructions, Git Bash for Windows and Terminal for macOS & Linux will now work similarly with functionalities such as `conda`/`mamba`, `git`, `cd`, and `ls`. These programs will be referred to simply as "terminal" and the following instructions will be presented as applicable for an OS.
@@ -359,7 +359,7 @@ We will now begin using the softwares we installed to clone the BOAT workshop Gi
 
 As discussed, Git facilitates version control while GitHub facilitates sharing and collaborating on Git repositories. At the interface between Git and GitHub exists the `git clone` command which allows users to download Git repositories onto their computers when those repositories are hosted on GitHub and have been made accessible to them.
 
-1) Launch terminal and navigate using `cd` into the folder which will be storing the BOAT workshop Git repository
+1) Launch terminal and navigate (using `cd`) into the folder which will be storing the BOAT workshop Git repository
 
 2) Run the command:
 ```
@@ -370,37 +370,25 @@ git clone https://github.com/BOAT-ocean-acoustics/fundamentals.git
 
 ### Creating the `conda` environment
 
-:::{note} Conda cheatsheet
+All coding projects have a minimal set of required packages necessary for the code to run successfully. `conda`/`mamba` helps in installing the required packages in isolated, project-specific environments. Git repositories containing code often provide a list of the required packages in files named `requirements.txt` or `environment.yml`.
+
+For `fundamentals` (the BOAT workshop Git repository), we have provided a `requirements.txt` under the `boat_tutorials` directory.
+
+1) Use terminal to navigate (using `cd`) into `fundamentals/boat_tutorials`
+
+2) Run the command:
+```
+mamba create --name boat-fundamentals --file requirements.txt
+```
+
+:::{note}
+Mamba is a drop-in replacement for conda that is generally faster and better at resolving dependencies so we can use it particularly when doing computationally intensive tasks such as creating/removing environments.
 :::
+
+3) Activate your environment by running the command:
+```
+conda activate boat-fundamentals
+```
 
 ### Launching Jupyter notebook
 
-
-Now we can run the provided example notebook within the ooi-data-explorations directory to see if all the packages have been installed properly. You may wonder why we are copying over a notebook instead of just opening it. This will allow us to keep an original copy of the notebook in case we end up changing the notebook in testing and/or debugging. We will realize during the summer school that this is where forking GitHub repositories becomes useful! For now, let's just copy the single test notebook. 
-
-```
-# First, go to the home directory
-cd ~
-# Create a local folder for working with different OOI data sets
-mkdir -p data/adhoc/testing
-# Copy some example notebooks over from the code directory
-cd code/ooi-data-explorations/python/examples/notebooks/phsen/
-cp * ~/data/adhoc/testing
-cd ~/data/adhoc/testing
-```
-
-Now in `~/data/adhoc/testing` launch the Jupyter notebook `creating_annotations.ipynb`. We recommend using VSCode to launch this notebook.
-
-:::{note}
-In VSCode, you will need to first install the Python and Jupyter extensions in order to select the `ooi` kernel to run your notebook.
-:::
-
-## GitHub updates
-
-The ooi-data-explorations code is a work in process and is being updated and refined regularly. To make sure
-you have the most recent code, copy/paste the following code block into a terminal:
-```
-cd ~/code/ooi-data-explorations
-git checkout master
-git pull
-```
