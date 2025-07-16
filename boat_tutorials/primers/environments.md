@@ -353,8 +353,27 @@ Once Git Bash has been re-opened, it should show you on start-up that you are in
 Following the above setup instructions, Git Bash for Windows and Terminal for macOS & Linux will now work similarly with functionalities such as `conda`/`mamba`, `git`, `cd`, and `ls`. These programs will be referred to simply as "terminal" and the following instructions will be presented as applicable for an OS.
 :::
 
-### Creating a `conda` environment
+We will now begin using the softwares we installed to clone the BOAT workshop Git repository, create a `conda` environment, and run code stored within a test Jupyter notebook.
 
+### Cloning the Git repository
+
+As discussed, Git facilitates version control while GitHub facilitates sharing and collaborating on Git repositories. At the interface between Git and GitHub exists the `git clone` command which allows users to download Git repositories onto their computers when those repositories are hosted on GitHub and have been made accessible to them.
+
+1) Launch terminal and navigate using `cd` into the folder which will be storing the BOAT workshop Git repository
+
+2) Run the command:
+```
+git clone https://github.com/BOAT-ocean-acoustics/fundamentals.git
+```
+
+3) The `fundamentals` Git repository will be dowloaded from the [GitHub URL](https://github.com/BOAT-ocean-acoustics/fundamentals.git) and contain the files stored within the published GitHub page.
+
+### Creating the `conda` environment
+
+:::{note} Conda cheatsheet
+:::
+
+### Launching Jupyter notebook
 
 
 Now we can run the provided example notebook within the ooi-data-explorations directory to see if all the packages have been installed properly. You may wonder why we are copying over a notebook instead of just opening it. This will allow us to keep an original copy of the notebook in case we end up changing the notebook in testing and/or debugging. We will realize during the summer school that this is where forking GitHub repositories becomes useful! For now, let's just copy the single test notebook. 
