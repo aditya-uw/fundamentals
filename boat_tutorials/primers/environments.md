@@ -239,7 +239,7 @@ After pressing ENTER, Miniforge will begin installing the required packages and 
 
 Automatically initializing `conda` makes it easier to use.
 
-3) After Miniforge has finished installing, make sure to close and re-open the terminal for changes to take effect.
+3) **After Miniforge has finished installing, make sure to close and re-open the terminal for changes to take effect.**
 
 (primers-miniforge_setup4_macOS)=
 ```{image} ../images/primers/miniforge_setup4_macOS.png
@@ -322,7 +322,7 @@ conda init bash
 conda config --set auto_activate_base true
 ```
 
-Be sure to close and re-open GitBash after these commands for the changes to take effect.
+**Be sure to close and re-open GitBash after these commands for the changes to take effect.**
 
 (primers-miniforge_setup8_windows)=
 ```{image} ../images/primers/miniforge_setup8_windows.png
