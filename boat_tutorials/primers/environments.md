@@ -366,7 +366,18 @@ As discussed, Git facilitates version control while GitHub facilitates sharing a
 git clone https://github.com/BOAT-ocean-acoustics/fundamentals.git
 ```
 
-3) The `fundamentals` Git repository will be dowloaded from the [GitHub URL](https://github.com/BOAT-ocean-acoustics/fundamentals.git) and contain the files stored within the published GitHub page.
+The `fundamentals` Git repository will be dowloaded from the [GitHub URL](https://github.com/BOAT-ocean-acoustics/fundamentals.git) and contain the files stored within the published GitHub page.
+
+As the Git repository continues to be updated, be sure to stay up-to-date by running the following commands in terminal under the `fundamentals` repository:
+
+:::{caution}
+The below commands will overwrite any changes you may have made to any notebooks. If you want to keep your changed files, we recommend renaming the files or moving them outside of the `fundamentals` repository into another folder. The below commands will simply download those files again if Git does not find that they exist under the same name in the same location.
+:::
+
+```
+git fetch origin
+git reset --hard origin/main
+```
 
 ### Creating the `conda` environment
 
