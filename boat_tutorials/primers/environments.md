@@ -387,7 +387,7 @@ For `fundamentals` (the BOAT workshop Git repository), we have provided a `requi
 
 1) Use terminal to navigate (using `cd`) into `fundamentals/boat_tutorials`
 
-2) Run the command:
+2) Run the command to create the `conda` environment named `boat-fundamentals`:
 ```
 mamba create --name boat-fundamentals --file requirements.txt
 ```
@@ -396,10 +396,45 @@ mamba create --name boat-fundamentals --file requirements.txt
 Mamba is a drop-in replacement for conda that is generally faster and better at resolving dependencies so we can use it particularly when doing computationally intensive tasks such as creating/removing environments.
 :::
 
-3) Activate your environment by running the command:
+3) The `boat-fundamentals` environment can be activated by running the command:
 ```
 conda activate boat-fundamentals
 ```
 
-### Launching Jupyter notebook
+### Using a Jupyter notebook with JupyterLab
+
+Jupyter notebooks are interactive and shareable documents designed to integrate live code, equations, comments, and visualizations in a single file. For the tutorials of this workshop, Jupyter notebooks will be extensively used to provide interactive widgets to introduce fundamental ocean acoustics concepts. JupyterLab will be the editing environment we will use to open, edit, and work through our Jupyter notebooks.
+
+1) Launch terminal and activate the `boat-fundamentals` environment
+```
+conda activate boat-fundamentals
+```
+
+2) Use `ipykernel` to install a kernel for the `boat-fundamentals` environment
+```
+python -m ipykernel install --user --name=boat-fundamentals
+```
+
+3) Navigate into the `fundamentals` repository and launch the JupyterLab editor by running:
+```
+jupyter lab
+```
+
+After running the above command, you should be taken to a website as shown below:
+
+(primers-jhub_launch1)=
+```{image} ../images/primers/jhub_launch1.png
+:width: 600px
+:align: center
+```
+<br>
+
+If a website has not launched, go back to the same terminal window and copy-paste one of the provided URLs into a browser to access the website:
+
+(primers-jhub_launch2)=
+```{image} ../images/primers/jhub_launch2.png
+:width: 600px
+:align: center
+```
+<br>
 
