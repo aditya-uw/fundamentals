@@ -468,6 +468,13 @@ The notebook we are providing for this tutorial has 3 code cells and 3 markdown 
 
 5) Run the markdown cell written to explain the widget and range of values that can be provided for `std`
 
-6) Run the code cell designed to plot the interactive widget that should allow you to seamlessly play around with varying `std` values and seeing what the PDF curve looks like
+6) Run the code cell designed to plot the interactive widget that should allow you to seamlessly play around with varying `std` values and seeing what the PDF curve looks like. Results for this cell will be similar to what's shown below:
+
+(primers-normal_slider)=
+```{image} ../images/primers/normal_slider.png
+:width: 400px
+:align: center
+```
+<br>
 
 We have now successfully cloned the BOAT workshop Git repository titled `fundamentals`, successfully built a `conda` environment called `boat-fundamentals`, and worked through the Jupyter notebook called `environment_test.ipynb`.
