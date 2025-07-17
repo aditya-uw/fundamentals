@@ -461,12 +461,12 @@ The notebook we are providing for this tutorial has 3 code cells and 3 markdown 
 
 2) Run the code cell written to import all the packages that will be used throughout the BOAT workshop. Any errors with this cell would only occur if our `conda` environment was incorrectly set up
 
-3) Run the markdown cell written to explain the plotting method that comes after.
+3) Run the markdown cell written to explain the plotting method that comes after
 
 4) Run the code cell which contains the plotting method described in the previous cell. Running this cell will not print anything because this is simply a method definition meant to describe the code that will be run when the method is provided a parameter `std`
 
 5) Run the markdown cell written to explain the widget and range of values that can be provided for `std`
 
-6) Run the code cell designed to plot the interactive widget that should allow you to seamlessly play around with varying `std` values and seeing what the PDF curve looks like. 
+6) Run the code cell designed to plot the interactive widget that should allow you to seamlessly play around with varying `std` values and seeing what the PDF curve looks like
 
 We have now successfully cloned the BOAT workshop Git repository titled `fundamentals`, successfully built a `conda` environment called `boat-fundamentals`, and worked through the Jupyter notebook called `environment_test.ipynb`.
