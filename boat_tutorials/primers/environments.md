@@ -401,9 +401,9 @@ Mamba is a drop-in replacement for conda that is generally faster and better at 
 conda activate boat-fundamentals
 ```
 
-### Using a Jupyter notebook with JupyterLab
+### Launching a Jupyter notebook with JupyterLab
 
-Jupyter notebooks are interactive and shareable documents designed to integrate live code, equations, comments, and visualizations in a single file. For the tutorials of this workshop, Jupyter notebooks will be extensively used to provide interactive widgets to introduce fundamental ocean acoustics concepts. JupyterLab will be the editing environment we will use to open, edit, and work through our Jupyter notebooks.
+Jupyter notebooks are interactive and shareable documents designed to integrate live code, equations, comments, and visualizations in a single file. For the tutorials of this workshop, Jupyter notebooks will be extensively used to introduce fundamental ocean acoustics concepts with interactive code outputs known as "widgets". JupyterLab will be the editing environment we will use to open, edit, and work through our Jupyter notebooks.
 
 1) Launch terminal and activate the `boat-fundamentals` environment
 ```
@@ -438,3 +438,35 @@ If a website has not launched, go back to the same terminal window and copy-past
 ```
 <br>
 
+4) Using JupyterLab's file explorer window, navigate to `boat-tutorials/primers` where we have stored the Jupyter notebook titled `environment_test.ipynb` that will test that the `boat-fundamentals` environment is set up on your machine.
+
+(primers-jhub_launch3)=
+```{image} ../images/primers/jhub_launch3.png
+:width: 600px
+:align: center
+```
+<br>
+
+After you have opened the Jupyter notebook, click on `Python 3 (ipykernel)` to select the kernel named `boat-fundamentals` for this notebook.
+
+Now we can start working through the Jupyter notebook!
+
+### Working through the Jupyter notebook
+
+As mentioned earlier, Jupyter notebooks are designed to integrate live code, notes, and visualizations in a single file. The main components of Jupyter notebooks are known as cells. Cells can either be designated as code cells (to hold Python code) or markdown cells (to hold Markdown notes).
+
+The notebook we are providing for this tutorial has 3 code cells and 3 markdown cells. As we will see, there will also be 1 interactive widget once we complete running the notebook. 
+
+1) Run the markdown cell written to introduce the notebook with a title, overview, and explanation for what the next cell is expected to do
+
+2) Run the code cell written to import all the packages that will be used throughout the BOAT workshop. Any errors with this cell would only occur if our `conda` environment was incorrectly set up
+
+3) Run the markdown cell written to explain the plotting method that comes after.
+
+4) Run the code cell which contains the plotting method described in the previous cell. Running this cell will not print anything because this is simply a method definition meant to describe the code that will be run when the method is provided a parameter `std`
+
+5) Run the markdown cell written to explain the widget and range of values that can be provided for `std`
+
+6) Run the code cell designed to plot the interactive widget that should allow you to seamlessly play around with varying `std` values and seeing what the PDF curve looks like. 
+
+We have now successfully cloned the BOAT workshop Git repository titled `fundamentals`, successfully built a `conda` environment called `boat-fundamentals`, and worked through the Jupyter notebook called `environment_test.ipynb`.
