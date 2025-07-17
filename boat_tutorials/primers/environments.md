@@ -471,7 +471,7 @@ The notebook we are providing for this tutorial has 3 code cells and 3 markdown 
 6) Run the code cell designed to plot the interactive widget that should allow you to seamlessly play around with varying `std` values and seeing what the PDF curve looks like. Results for this cell will be similar to what's shown below:
 
 (primers-normal_slider)=
-```{image} ../images/primers/normal_slider.png
+```{image} ../images/primers/normal_slider.gif
 :width: 400px
 :align: center
 ```
