@@ -49,8 +49,9 @@ parts:
     
     - file: primers/env_local_setup.md
       sections:
-      - file: primers/local_git
-      - file: primers/local_conda
+      - file: primers/local_install_git
+      - file: primers/local_install_conda
+      - file: primers/local_create_env
     - file: primers/codespaces
     - file: primers/decibel.ipynb
     

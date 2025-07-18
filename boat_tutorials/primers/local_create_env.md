@@ -1,4 +1,4 @@
-## Creating a conda environment for running tutorials
+# Install conda and create an environment
 
 :::{note}
 Following the above setup instructions, Git Bash for Windows and Terminal for macOS & Linux will now work similarly with functionalities such as `conda`/`mamba`, `git`, `cd`, and `ls`. These programs will be referred to simply as "terminal" and the following instructions will be presented as applicable for an OS.
@@ -6,7 +6,7 @@ Following the above setup instructions, Git Bash for Windows and Terminal for ma
 
 We will now begin using the softwares we installed to clone the BOAT workshop Git repository, create a `conda` environment, and run code stored within a test Jupyter notebook.
 
-### Cloning the Git repository
+## Cloning the Git repository
 
 As discussed, Git facilitates version control while GitHub facilitates sharing and collaborating on Git repositories. At the interface between Git and GitHub exists the `git clone` command which allows users to download Git repositories onto their computers when those repositories are hosted on GitHub and have been made accessible to them.
 
@@ -30,7 +30,7 @@ git fetch origin
 git reset --hard origin/main
 ```
 
-### Creating the `conda` environment
+## Creating the `conda` environment
 
 All coding projects have a minimal set of required packages necessary for the code to run successfully. `conda`/`mamba` helps in installing the required packages in isolated, project-specific environments. Git repositories containing code often provide a list of the required packages in files named `requirements.txt` or `environment.yml`.
 
@@ -52,7 +52,7 @@ Mamba is a drop-in replacement for conda that is generally faster and better at 
 conda activate boat-fundamentals
 ```
 
-### Launching a Jupyter notebook with JupyterLab
+## Launching a Jupyter notebook with JupyterLab
 
 Jupyter notebooks are interactive and shareable documents designed to integrate live code, equations, comments, and visualizations in a single file. For the tutorials of this workshop, Jupyter notebooks will be extensively used to introduce fundamental ocean acoustics concepts with interactive code outputs known as "widgets". JupyterLab will be the editing environment we will use to open, edit, and work through our Jupyter notebooks.
 
@@ -102,7 +102,7 @@ After you have opened the Jupyter notebook, click on `Python 3 (ipykernel)` to s
 
 Now we can start working through the Jupyter notebook!
 
-### Working through the Jupyter notebook
+## Working through the Jupyter notebook
 
 As mentioned earlier, Jupyter notebooks are designed to integrate live code, notes, and visualizations in a single file. The main components of Jupyter notebooks are known as cells. Cells can either be designated as code cells (to hold Python code) or markdown cells (to hold Markdown notes).
 
