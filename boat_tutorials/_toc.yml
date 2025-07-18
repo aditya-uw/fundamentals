@@ -47,7 +47,10 @@ parts:
   - caption: Technical primers  
     chapters:
     
-    - file: primers/env_local_setup
+    - file: primers/env_local_setup.md
+      sections:
+      - file: primers/local_conda
+      - file: primers/local_git
     - file: primers/codespaces
     - file: primers/decibel.ipynb
     
