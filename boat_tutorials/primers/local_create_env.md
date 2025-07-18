@@ -1,4 +1,4 @@
-# Install conda and create an environment
+# Create an conda environment
 
 :::{note}
 Following the above setup instructions, Git Bash for Windows and Terminal for macOS & Linux will now work similarly with functionalities such as `conda`/`mamba`, `git`, `cd`, and `ls`. These programs will be referred to simply as "terminal" and the following instructions will be presented as applicable for an OS.
