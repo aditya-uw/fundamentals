@@ -1,4 +1,4 @@
-(local_setup_git)=
+(env_setup-local_git)=
 # Install Git
 
 [Git](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F) is a version control system that is designed to track changes in files stored within repositories. [GitHub](https://docs.github.com/en/get-started/start-your-journey) offers a platform for storing and collaborating on various Git repositories. 

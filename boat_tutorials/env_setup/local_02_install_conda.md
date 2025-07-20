@@ -1,4 +1,4 @@
-(local_setup_conda)=
+(env_setup-local_conda)=
 # Install conda via Miniforge
 
 [Conda](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html) (or its recent cousin, [Mamba](https://mamba.readthedocs.io/en/latest/)) is an environment manager that will be useful in running the tutorials in this book on your local machine. Using conda has the following benefits:

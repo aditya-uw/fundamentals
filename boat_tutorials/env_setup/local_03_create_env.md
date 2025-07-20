@@ -1,4 +1,4 @@
-(local_setup_create_env)=
+(env_setup-local_create_env)=
 # Create an conda environment
 
 :::{note}
