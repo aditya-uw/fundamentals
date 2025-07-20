@@ -68,7 +68,7 @@ winget install --id Git.Git -e --source winget --custom '/o:Components=ext,gitlf
 ```
 <br>
 
-### GUI install
+### Install using GUI
 
 [Download](https://git-scm.com/downloads) and run the Windows installer `.exe` file.  
 
