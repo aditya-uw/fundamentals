@@ -31,7 +31,7 @@ Once the setup window has opened, complete the following steps:
 
 (primers-git_setup1_windows)=
 ```{image} ../images/primers/git_setup1_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -40,7 +40,7 @@ Once the setup window has opened, complete the following steps:
 
 (primers-git_setup2_windows)=
 ```{image} ../images/primers/git_setup2_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -49,7 +49,7 @@ Once the setup window has opened, complete the following steps:
 
 (primers-git_setup3_windows)=
 ```{image} ../images/primers/git_setup3_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -58,7 +58,7 @@ Once the setup window has opened, complete the following steps:
 
 (primers-git_setup4_windows)=
 ```{image} ../images/primers/git_setup4_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -67,7 +67,7 @@ Once the setup window has opened, complete the following steps:
 
 (primers-git_setup5_windows)=
 ```{image} ../images/primers/git_setup5_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -76,7 +76,7 @@ Once the setup window has opened, complete the following steps:
 
 (primers-git_setup6_windows)=
 ```{image} ../images/primers/git_setup6_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -85,7 +85,7 @@ Once the setup window has opened, complete the following steps:
 
 (primers-git_setup7_windows)=
 ```{image} ../images/primers/git_setup7_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -94,7 +94,7 @@ Once the setup window has opened, complete the following steps:
 
 (primers-git_setup8_windows)=
 ```{image} ../images/primers/git_setup8_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -103,7 +103,7 @@ Once the setup window has opened, complete the following steps:
 
 (primers-git_setup9_windows)=
 ```{image} ../images/primers/git_setup9_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -112,7 +112,7 @@ Once the setup window has opened, complete the following steps:
 
 (primers-git_setup10_windows)=
 ```{image} ../images/primers/git_setup10_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -121,7 +121,7 @@ Once the setup window has opened, complete the following steps:
 
 (primers-git_setup11_windows)=
 ```{image} ../images/primers/git_setup11_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -130,7 +130,7 @@ Once the setup window has opened, complete the following steps:
 
 (primers-git_setup12_windows)=
 ```{image} ../images/primers/git_setup12_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -139,7 +139,7 @@ Once the setup window has opened, complete the following steps:
 
 (primers-git_setup13_windows)=
 ```{image} ../images/primers/git_setup13_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -149,7 +149,7 @@ Git will now begin to install and show a progress bar.
 
 (primers-git_setup14_windows)=
 ```{image} ../images/primers/git_setup14_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -160,7 +160,7 @@ To launch Git Bash, go to the search bar in the Windows task bar and type "Git B
 
 (primers-git_launch1_windows)=
 ```{image} ../images/primers/git_launch1_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
@@ -169,7 +169,7 @@ When the Git Bash app appears, open it to launch Git Bash terminal.
 
 (primers-git_launch2_windows)=
 ```{image} ../images/primers/git_launch2_windows.png
-:width: 400px
+:width: 550px
 :align: center
 ```
 <br>
