@@ -76,7 +76,7 @@ After running the above command, you should be taken to a website as shown below
 
 (primers-jhub_launch1)=
 ```{image} ../images/primers/jhub_launch1.png
-:width: 600px
+:width: 900px
 :align: center
 ```
 <br>
@@ -85,7 +85,7 @@ If a website has not launched, go back to the same terminal window and copy-past
 
 (primers-jhub_launch2)=
 ```{image} ../images/primers/jhub_launch2.png
-:width: 600px
+:width: 900px
 :align: center
 ```
 <br>
@@ -94,7 +94,7 @@ If a website has not launched, go back to the same terminal window and copy-past
 
 (primers-jhub_launch3)=
 ```{image} ../images/primers/jhub_launch3.png
-:width: 600px
+:width: 900px
 :align: center
 ```
 <br>
@@ -123,7 +123,7 @@ The notebook we are providing for this tutorial has 3 code cells and 3 markdown 
 
 (primers-normal_slider)=
 ```{image} ../images/primers/normal_slider.gif
-:width: 400px
+:width: 700px
 :align: center
 ```
 <br>
