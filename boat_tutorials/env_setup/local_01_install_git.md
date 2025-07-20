@@ -202,7 +202,7 @@ To launch Git Bash, go to the search bar in the Windows task bar and type "Git B
 
 (primers-git_launch1_windows)=
 ```{image} ../images/primers/git_launch1_windows.png
-:width: 900px
+:width: 700px
 :align: center
 ```
 <br>
