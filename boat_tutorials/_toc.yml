@@ -4,6 +4,15 @@
 format: jb-book
 root: landing
 parts:
+  # LOCAL SETUP
+  - caption: Computing environment
+    chapters:
+    # local setup
+    - file: env_setup/local_00
+      sections:
+      - file: env_setup/local_01_install_git
+      - file: env_setup/local_02_install_conda
+      - file: env_setup/local_03_create_env
   # ACOUSTICS
   - caption: Acoustics
     chapters:
@@ -46,12 +55,7 @@ parts:
   # TECHNICAL PRIMER
   - caption: Technical primers  
     chapters:
-    
-    - file: primers/env_local_setup.md
-      sections:
-      - file: primers/local_install_git
-      - file: primers/local_install_conda
-      - file: primers/local_create_env
+
     - file: primers/codespaces
     - file: primers/decibel.ipynb
     
