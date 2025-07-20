@@ -30,7 +30,7 @@ For first-time installation of Git, we recommend installation using the GUI to s
 
 ### Command-line install
 
-Git may be installed using command-line as long as the user has the `winget` tool (installed by-default on Windows 10 and Windows 11), access to internet, and Windows Powershell. This method will install Git with default settings unless [specified as discussed here](https://github.com/microsoft/winget-cli/discussions/3462). 
+Git may be installed using command-line as long as the user has the `winget` tool (installed by-default on Windows 10 and Windows 11), access to internet, and Windows Powershell. 
 
 :::{note}
 The provided command is designed to install Git with all the same settings as the GUI install. If you wish to install with any different settings, you may use [this documentation](https://gitforwindows.org/mapping-between-git-installer-gui-settings-and-command-line-arguments.html) to know how to incorporate your custom settings.
