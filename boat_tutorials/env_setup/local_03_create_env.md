@@ -74,8 +74,8 @@ jupyter lab
 
 After running the above command, you should be taken to a website as shown below:
 
-(primers-jhub_launch1)=
-```{image} ../images/primers/jhub_launch1.png
+(primers-jlab_launch1)=
+```{image} ../images/primers/jlab_launch1.png
 :width: 900px
 :align: center
 ```
@@ -83,8 +83,8 @@ After running the above command, you should be taken to a website as shown below
 
 If a website has not launched, go back to the same terminal window and copy-paste one of the provided URLs into a browser to access the website:
 
-(primers-jhub_launch2)=
-```{image} ../images/primers/jhub_launch2.png
+(primers-jlab_launch2)=
+```{image} ../images/primers/jlab_launch2.png
 :width: 900px
 :align: center
 ```
@@ -92,8 +92,8 @@ If a website has not launched, go back to the same terminal window and copy-past
 
 4) Using JupyterLab's file explorer window, navigate to the `boat-tutorials/env_setup` folder where we have stored a Jupyter notebook titled `local_env_test.ipynb`. This notebook lets us test and ensure that the `boat-fundamentals` environment is set up on your machine.
 
-(primers-jhub_launch3)=
-```{image} ../images/primers/jhub_launch3.png
+(primers-jlab_launch3)=
+```{image} ../images/primers/jlab_launch3.png
 :width: 900px
 :align: center
 ```
