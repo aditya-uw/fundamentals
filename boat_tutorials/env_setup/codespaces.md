@@ -1,6 +1,8 @@
 # Computing Environment
 
-The tutorials in this book can be executed directly in a Python ennvironment. For that you can use a service provided by GitHub called [Codespaces](https://github.com/features/codespaces). It includes free usage tier for running the code (from a GitHub repository or new code) through a [VSCode](https://code.visualstudio.com/) editor interface. 
+In addition to setting up a local computing environment to run the tutorials or using an existing JupyterHub, you can also use the "[Codespaces](https://github.com/features/codespaces)" service provided by GitHub to run all tutorials here. 
+
+<!-- It includes free usage tier for running the code (from a GitHub repository or new code) through a [VSCode](https://code.visualstudio.com/) editor interface.  -->
 
 ```{note}
 * 1 hour on a 2-core (default) machine == 1 core hour
@@ -85,9 +87,3 @@ When you have finished using the codespace, make sure you stop it so you do not 
 ```{caution} 
 If you have already used your Codespaces allocation for personal needs, you can clone the repository and execute the notebooks on your computer. Let us know if you encounter any setup problems.
 ```
-
-
-
-
-
-
