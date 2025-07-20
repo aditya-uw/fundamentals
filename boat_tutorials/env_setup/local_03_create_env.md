@@ -90,7 +90,7 @@ If a website has not launched, go back to the same terminal window and copy-past
 ```
 <br>
 
-4) Using JupyterLab's file explorer window, navigate to `boat-tutorials/primers` where we have stored the Jupyter notebook titled `environment_test.ipynb` that will test that the `boat-fundamentals` environment is set up on your machine.
+4) Using JupyterLab's file explorer window, navigate to the `boat-tutorials/env_setup` folder where we have stored a Jupyter notebook titled `local_env_test.ipynb`. This notebook lets us test and ensure that the `boat-fundamentals` environment is set up on your machine.
 
 (primers-jhub_launch3)=
 ```{image} ../images/primers/jhub_launch3.png
@@ -128,4 +128,4 @@ The notebook we are providing for this tutorial has 3 code cells and 3 markdown 
 ```
 <br>
 
-We have now successfully cloned the BOAT workshop Git repository titled `fundamentals`, successfully built a `conda` environment called `boat-fundamentals`, and worked through the Jupyter notebook called `environment_test.ipynb`.
+We have now successfully cloned the BOAT workshop Git repository titled `fundamentals`, successfully built a `conda` environment called `boat-fundamentals`, and worked through the Jupyter notebook called `local_env_test.ipynb`.
