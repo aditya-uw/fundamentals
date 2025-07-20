@@ -31,7 +31,7 @@ You may need to `cd ...` into the folder that contains your downloaded file firs
 
 (primers-miniforge_setup1_macOS)=
 ```{image} ../images/primers/miniforge_setup1_macOS.png
-:width: 600px
+:width: 900px
 :align: center
 ```
 <br>
@@ -41,7 +41,7 @@ After running the above commands, complete the following steps from the installe
 
 (primers-miniforge_setup2_macOS)=
 ```{image} ../images/primers/miniforge_setup2_macOS.png
-:width: 600px
+:width: 900px
 :align: center
 ```
 <br>
@@ -51,7 +51,7 @@ After pressing ENTER, Miniforge will begin installing the required packages and 
 
 (primers-miniforge_setup3_macOS)=
 ```{image} ../images/primers/miniforge_setup3_macOS.png
-:width: 600px
+:width: 900px
 :align: center
 ```
 <br>
@@ -62,7 +62,7 @@ Automatically initializing `conda` makes it easier to use.
 
 (primers-miniforge_setup4_macOS)=
 ```{image} ../images/primers/miniforge_setup4_macOS.png
-:width: 600px
+:width: 900px
 :align: center
 ```
 <br>
@@ -73,7 +73,7 @@ Download and run the Windows installer `.exe` file.
 
 (primers-miniforge_setup1_windows)=
 ```{image} ../images/primers/miniforge_setup1_windows.png
-:width: 400px
+:width: 700px
 :align: center
 ```
 <br>
@@ -84,7 +84,7 @@ As you go through the installer, complete the following steps:
 
 (primers-miniforge_setup2_windows)=
 ```{image} ../images/primers/miniforge_setup2_windows.png
-:width: 400px
+:width: 700px
 :align: center
 ```
 <br>
@@ -93,7 +93,7 @@ As you go through the installer, complete the following steps:
 
 (primers-miniforge_setup3_windows)=
 ```{image} ../images/primers/miniforge_setup3_windows.png
-:width: 400px
+:width: 700px
 :align: center
 ```
 <br>
@@ -102,7 +102,7 @@ As you go through the installer, complete the following steps:
 
 (primers-miniforge_setup4_windows)=
 ```{image} ../images/primers/miniforge_setup4_windows.png
-:width: 400px
+:width: 700px
 :align: center
 ```
 <br>
@@ -111,7 +111,7 @@ As you go through the installer, complete the following steps:
 
 (primers-miniforge_setup5_windows)=
 ```{image} ../images/primers/miniforge_setup5_windows.png
-:width: 400px
+:width: 700px
 :align: center
 ```
 <br>
@@ -120,14 +120,14 @@ As you go through the installer, complete the following steps:
 
 (primers-miniforge_setup6_windows)=
 ```{image} ../images/primers/miniforge_setup6_windows.png
-:width: 400px
+:width: 700px
 :align: center
 ```
 <br>
 
 (primers-miniforge_setup7_windows)=
 ```{image} ../images/primers/miniforge_setup7_windows.png
-:width: 400px
+:width: 700px
 :align: center
 ```
 <br>
@@ -145,14 +145,14 @@ conda config --set auto_activate_base true
 
 (primers-miniforge_setup8_windows)=
 ```{image} ../images/primers/miniforge_setup8_windows.png
-:width: 600px
+:width: 900px
 :align: center
 ```
 <br>
 
 (primers-miniforge_setup9_windows)=
 ```{image} ../images/primers/miniforge_setup9_windows.png
-:width: 600px
+:width: 900px
 :align: center
 ```
 <br>
@@ -161,7 +161,7 @@ Once Git Bash has been re-opened, it should show you on start-up that you are in
 
 (primers-miniforge_setup10_windows)=
 ```{image} ../images/primers/miniforge_setup10_windows.png
-:width: 600px
+:width: 900px
 :align: center
 ```
 <br>
