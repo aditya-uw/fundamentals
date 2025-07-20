@@ -1,5 +1,5 @@
-(primers-environments)=
-# Local environment setup
+(env_setup-local)=
+# Local setup
 
 In this section, we will walk you through the steps needed to set up a local computation envrionment, which you can use to run all the tutorials (i.e. the widgets will be "alive" and responding to changing inputs).
 

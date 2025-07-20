@@ -1,3 +1,4 @@
+(env_setup-codespaces)=
 # Use GitHub Codespaces
 
 In addition to setting up a local computing environment to run the tutorials or using an existing JupyterHub, you can also use the "[Codespaces](https://github.com/features/codespaces)" service provided by GitHub to run all tutorials here. 
