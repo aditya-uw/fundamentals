@@ -42,7 +42,7 @@ winget install --id Git.Git -e --source winget
 
 (primers-winget_git_setup2)=
 ```{image} ../images/primers/winget_git_setup2.png
-:width: 700px
+:width: 900px
 :align: center
 ```
 <br>
@@ -51,7 +51,7 @@ winget install --id Git.Git -e --source winget
 
 (primers-winget_git_setup3)=
 ```{image} ../images/primers/winget_git_setup3.png
-:width: 700px
+:width: 900px
 :align: center
 ```
 <br>
@@ -202,7 +202,7 @@ To launch Git Bash, go to the search bar in the Windows task bar and type "Git B
 
 (primers-git_launch1_windows)=
 ```{image} ../images/primers/git_launch1_windows.png
-:width: 700px
+:width: 900px
 :align: center
 ```
 <br>
@@ -211,7 +211,7 @@ When the Git Bash app appears, open it to launch Git Bash terminal.
 
 (primers-git_launch2_windows)=
 ```{image} ../images/primers/git_launch2_windows.png
-:width: 700px
+:width: 900px
 :align: center
 ```
 <br>
