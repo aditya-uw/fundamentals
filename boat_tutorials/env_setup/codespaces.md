@@ -1,12 +1,18 @@
-# Computing Environment
+# Use GitHub Codespaces
 
 In addition to setting up a local computing environment to run the tutorials or using an existing JupyterHub, you can also use the "[Codespaces](https://github.com/features/codespaces)" service provided by GitHub to run all tutorials here. 
 
 <!-- It includes free usage tier for running the code (from a GitHub repository or new code) through a [VSCode](https://code.visualstudio.com/) editor interface.  -->
-
+<!-- 
 ```{note}
 * 1 hour on a 2-core (default) machine == 1 core hour
 * Students can get a GitHub PRO account.
+``` 
+-->
+
+```{Note}
+:class: note
+The following steps require a GitHub account. If you don't have one, sign up [here](https://github.com/signup)!
 ```
 
 
