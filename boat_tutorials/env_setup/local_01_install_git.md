@@ -22,13 +22,25 @@ To launch terminal, go to Spotlight Search or Applications and find the Terminal
 
 ## Windows
 
+Git can be installed two different ways on Windows. The first way is through using Windows' command-line interface (Windows Powershell) which only requires a single command in the interface. The second way is through downloading the Windows installer with a graphical user interface (GUI). 
+
+:::{note}
+For first-time installation of Git, we recommend installation using the GUI to see where Git will be installed on your computer and to easily select the settings specific to your Git software.
+:::
+
 ### Command-line install
 
 Git may be installed using command-line as long as the user has the `winget` tool (installed by-default on Windows 10 and Windows 11), access to internet, and Windows Powershell. This method will install Git with default settings unless [specified as discussed here](https://github.com/microsoft/winget-cli/discussions/3462). 
 
-The command for default Git install using Windows Powershell is:
+:::{attention}
+The provided command is designed to install Git with all the same settings as the GUI install. If you wish to install with change any settings, you may use [this documentation](https://gitforwindows.org/mapping-between-git-installer-gui-settings-and-command-line-arguments.html) to include any custom settings.
+
+A default Git install is commonly shown online as `winget install --id Git.Git -e --source winget`
+:::
+
+The command we recommend for installing Git using Windows Powershell is:
 ```
-winget install --id Git.Git -e --source winget
+winget install --id Git.Git -e --source winget --custom '/o:Components=ext,gitlfs,assoc,assoc_sh /o:EditorOption=Nano /o:SSHOption=OpenSSH /o:CurlOption:OpenSSL /o:BashTerminalOption=MinTTY'
 ```
 
 1) Launch Windows Powershell and enter the command above
