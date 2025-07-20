@@ -90,7 +90,7 @@ If a website has not launched, go back to the same terminal window and copy-past
 ```
 <br>
 
-4) Using JupyterLab's file explorer window, navigate to the `boat-tutorials/env_setup` folder where we have stored a Jupyter notebook titled `local_env_test.ipynb`. This notebook lets us test and ensure that the `boat-fundamentals` environment is set up on your machine.
+4) Using JupyterLab's file explorer window, navigate to the `boat_tutorials/env_setup` folder where we have stored a Jupyter notebook titled `local_env_test.ipynb`. This notebook lets us test and ensure that the `boat-fundamentals` environment is set up on your machine.
 
 (primers-jlab_launch3)=
 ```{image} ../images/primers/jlab_launch3.png
