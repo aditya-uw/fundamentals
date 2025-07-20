@@ -22,6 +22,42 @@ To launch terminal, go to Spotlight Search or Applications and find the Terminal
 
 ## Windows
 
+### Command-line install
+
+Git may be installed using command-line as long as the user has the `winget` tool (installed by-default on Windows 10 and Windows 11), access to internet, and Windows Powershell. This method will install Git with default settings unless [specified as discussed here](https://github.com/microsoft/winget-cli/discussions/3462). 
+
+The command for default Git install using Windows Powershell is:
+```
+winget install --id Git.Git -e --source winget
+```
+
+1) Launch Windows Powershell and enter the command above
+
+(primers-winget_git_setup1)=
+```{image} ../images/primers/winget_git_setup1.png
+:width: 700px
+:align: center
+```
+<br>
+
+(primers-winget_git_setup2)=
+```{image} ../images/primers/winget_git_setup2.png
+:width: 700px
+:align: center
+```
+<br>
+
+2) You will be prompted for administrator password and `winget` will proceed to download and install Git
+
+(primers-winget_git_setup3)=
+```{image} ../images/primers/winget_git_setup3.png
+:width: 700px
+:align: center
+```
+<br>
+
+### GUI install
+
 [Download](https://git-scm.com/downloads) and run the Windows installer `.exe` file.  
 
 After double-clicking on the installer `.exe` file, you will first be prompted to enter your administrator password.
@@ -90,7 +126,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-7) Use the OpenSSL library as the HTTPS transport backend
+8) Use the OpenSSL library as the HTTPS transport backend
 
 (primers-git_setup8_windows)=
 ```{image} ../images/primers/git_setup8_windows.png
@@ -99,7 +135,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-8) Checkout Windows-style, commit Unix-style line endings
+9) Checkout Windows-style, commit Unix-style line endings
 
 (primers-git_setup9_windows)=
 ```{image} ../images/primers/git_setup9_windows.png
@@ -108,7 +144,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-9) Use MinTTY as the terminal emulator to use with Git Bash
+10) Use MinTTY as the terminal emulator to use with Git Bash
 
 (primers-git_setup10_windows)=
 ```{image} ../images/primers/git_setup10_windows.png
@@ -117,7 +153,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-10) Select fast-forward or merge as the default behavior for git pull
+11) Select fast-forward or merge as the default behavior for git pull
 
 (primers-git_setup11_windows)=
 ```{image} ../images/primers/git_setup11_windows.png
@@ -126,7 +162,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-11) Select Git Credential Manager
+12) Select Git Credential Manager
 
 (primers-git_setup12_windows)=
 ```{image} ../images/primers/git_setup12_windows.png
@@ -135,7 +171,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-12) Enable file-system caching and click on "Install"
+13) Enable file-system caching and click on "Install"
 
 (primers-git_setup13_windows)=
 ```{image} ../images/primers/git_setup13_windows.png
@@ -145,7 +181,7 @@ Once the setup window has opened, complete the following steps:
 <br>
 Git will now begin to install and show a progress bar. 
 
-13) Click "Finish" once installed
+14) Click "Finish" once installed
 
 (primers-git_setup14_windows)=
 ```{image} ../images/primers/git_setup14_windows.png
@@ -153,6 +189,12 @@ Git will now begin to install and show a progress bar.
 :align: center
 ```
 <br>
+
+:::{note}
+If there are any Git installation steps not covered in the instructions above, we recommend using default settings or using other online tutorials as found on [Hostman](https://hostman.com/tutorials/installing-git-on-windows/), [PhoenixNAP](https://phoenixnap.com/kb/how-to-install-git-windows), or [How-To Geek](https://www.howtogeek.com/832083/how-to-install-git-on-windows/). 
+:::
+
+### Post-installation
 
 Downloading Git will provide users with a new Git Bash terminal which recommend for setting up the `conda` environments and downloading the Git repositories as it allows the use of `conda` and `git`, and commands like `cd` and `ls`.
 
