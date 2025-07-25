@@ -13,21 +13,21 @@ We will now use git and conda/mamba to clone the BOAT tutorial repository and cr
 Git is a version control tool that can be used locally, while GitHub facilitates sharing and collaborating via web-hosted repositories. We can use the `git clone` command to download GitHub repositories to our own computer.
 
 1) Launch a terminal and navigate (using `cd`) into the folder which you would like the BOAT tutoral repository to be save in. For example, the command below navigates into a directory called `git_repos`:
-```shell
-$ cd git_repos
-```
+    ```shell
+    $ cd git_repos
+    ```
 
 2) Run the command below to clone (download) the BOAT tutorial repository from GitHub. You should then have a new folder called `fundamentals` under `git_repos`.
-```shell
-$ git clone https://github.com/BOAT-ocean-acoustics/fundamentals.git
-```
+    ```shell
+    $ git clone https://github.com/BOAT-ocean-acoustics/fundamentals.git
+    ```
 
 3) Navigate into the `fundamentals` repository directory (assuming you are in `git_repos`)
-```shell
-$ cd fundamentals
-```
+    ```shell
+    $ cd fundamentals
+    ```
 
-:::{caution}
+:::{tip}
 If you have previously cloned the repository and want to get the latest version, run the following commands:
 ```shell
 $ cd git_repos/fundamentals  # make sure you are in the tutorial repo
@@ -44,28 +44,28 @@ Note these commands will overwrite any changes you may have made in the repo fol
 All coding projects have a minimal set of required packages necessary for the code to run successfully. `conda`/`mamba` can help us install the compatible versions of these packages in isolated, project-specific environments. Here, we will use `conda` to create an environment that contains all packages specified in `requirements.txt` in the tutorial repository.
 
 1) Assume the tutorial repository you just clone lives under the `git_repos` directory. In your terminal, navigate (using `cd`) into `git_repos/fundamentals/boat_tutorials`:
-```shell
-$ cd git_repos/fundamentals/boat_tutorials
-```
+    ```shell
+    $ cd git_repos/fundamentals/boat_tutorials
+    ```
 
 2) Run the command to create a `conda` environment called `boat-fundamentals`:
-```shell
-$ mamba create --name boat-fundamentals --file requirements.txt
-```
+    ```shell
+    $ mamba create --name boat-fundamentals --file requirements.txt
+    ```
 
 :::{note}
 `Mamba` is a drop-in replacement for `conda` that is generally faster and better at resolving dependencies.
 :::
 
 3) Activate the `boat-fundamentals` environment:
-```shell
-$ conda activate boat-fundamentals
-```
+    ```shell
+    $ conda activate boat-fundamentals
+    ```
 
 4) Use `ipykernel` to install a Jupyter kernel for the `boat-fundamentals` environment. See the next section for why we want to use Jupyter.
-```shell
-$ python -m ipykernel install --user --name=boat-fundamentals
-```
+    ```shell
+    $ python -m ipykernel install --user --name=boat-fundamentals
+    ```
 
 
 ## Launch a Jupyter notebook with JupyterLab
@@ -79,9 +79,9 @@ Check out Project [Jupyter](https://jupyter.org/) to understand the Jupyter ecos
 :::
 
 Let's now we launch the JupyterLab:
-```shell
-$ jupyter lab
-```
+    ```shell
+    $ jupyter lab
+    ```
 
 You should be taken to a website as shown below:
 
