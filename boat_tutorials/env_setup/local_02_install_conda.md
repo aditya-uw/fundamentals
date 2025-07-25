@@ -1,23 +1,23 @@
 (env_setup-local_conda)=
 # Install conda via Miniforge
 
-[Conda](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html) (or its recent cousin, [Mamba](https://mamba.readthedocs.io/en/latest/)) is an environment manager that will be useful in running the tutorials in this book on your local machine. Using conda has the following benefits:
+[Conda](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html) (or its recent cousin, [Mamba](https://mamba.readthedocs.io/en/latest/)) is an environment manager that will help us set up a computational environment to run the tutorials. Using conda has the following benefits:
 - Isolation of dependencies
 - Reproducibility
 - Ease of management
 - Testing and development
 
-If your computer does not have `conda` installed, we suggest installing [Miniforge](https://github.com/conda-forge/miniforge) as a way to get access to [Conda](https://conda.io/), [Mamba](https://github.com/mamba-org/mamba) and Python, with `conda-forge` as default channel.  
-Once Miniforge is installed, you should be able to use `conda` and `mamba` in your terminal.  
+If your computer does not have `conda` installed, we suggest install via [Miniforge](https://github.com/conda-forge/miniforge). 
 
-We recommend installing Miniforge by downloading and running the provided installer for your OS from [https://conda-forge.org/download/](https://conda-forge.org/download/)  
+We recommend installing Miniforge by downloading and running the installer for your operation system from [https://conda-forge.org/download/](https://conda-forge.org/download/). Below we summarize the steps.
+
 
 ## Mac & Linux
 
-Download the installer `.sh` file and open your computer's terminal to run the command:
+Download the shell script (the `.sh` file) and open a terminal to run the command:
 
-```
-bash Miniforge3-$(uname)-$(uname -m).sh
+```shell
+$ bash Miniforge3-$(uname)-$(uname -m).sh
 ```
 
 :::{warning}
@@ -27,7 +27,7 @@ bash Miniforge3-MacOSX-arm64.sh # (i.e., run `bash` on the installer's file name
 ```
 :::
 
-You may need to `cd ...` into the folder that contains your downloaded file first.
+You may need to `cd` (change directory) into the folder that contains your downloaded file first. For example, below we `cd` into the `~/Downloads` first before running the command:
 
 (primers-miniforge_setup1_macOS)=
 ```{image} ../images/primers/miniforge_setup1_macOS.png
@@ -35,9 +35,11 @@ You may need to `cd ...` into the folder that contains your downloaded file firs
 :align: center
 ```
 <br>
+<br>
+
 After running the above commands, complete the following steps from the installer:
 
-1) Agree to license terms and confirm the default location for install.
+1) Agree to license terms and confirm the default location for install. After pressing ENTER, Miniforge will begin installing the required packages and solvers.
 
 (primers-miniforge_setup2_macOS)=
 ```{image} ../images/primers/miniforge_setup2_macOS.png
@@ -45,9 +47,8 @@ After running the above commands, complete the following steps from the installe
 :align: center
 ```
 <br>
-After pressing ENTER, Miniforge will begin installing the required packages and solvers.
 
-2) Type `yes` if prompted "Do you wish to update your shell profile to automatically initialize conda?" 
+2) Type `yes` if prompted "Do you wish to update your shell profile to automatically initialize conda?" Automatically initializing `conda` makes it easier to use.
 
 (primers-miniforge_setup3_macOS)=
 ```{image} ../images/primers/miniforge_setup3_macOS.png
@@ -56,7 +57,6 @@ After pressing ENTER, Miniforge will begin installing the required packages and 
 ```
 <br>
 
-Automatically initializing `conda` makes it easier to use.
 
 3) **After Miniforge has finished installing, make sure to close and re-open the terminal for changes to take effect.**
 
@@ -67,9 +67,11 @@ Automatically initializing `conda` makes it easier to use.
 ```
 <br>
 
+
+
 ## Windows
 
-Download and run the Windows installer `.exe` file.  
+Download and run the Windows installer (the `.exe` file).
 
 (primers-miniforge_setup1_windows)=
 ```{image} ../images/primers/miniforge_setup1_windows.png
@@ -78,7 +80,7 @@ Download and run the Windows installer `.exe` file.
 ```
 <br>
 
-As you go through the installer, complete the following steps:
+Follow the steps below as you go through the installer:
 
 1) Agree to the License Agreement
 
@@ -116,7 +118,7 @@ As you go through the installer, complete the following steps:
 ```
 <br>
 
-5) Wait for installation and click on Next and Finish.
+5) Wait for installation and click "Next" and "Finish"
 
 (primers-miniforge_setup6_windows)=
 ```{image} ../images/primers/miniforge_setup6_windows.png
@@ -132,9 +134,10 @@ As you go through the installer, complete the following steps:
 ```
 <br>
 
-Miniforge has been installed on Windows!
+Miniforge has now been installed on Windows!
 
-Now for Windows, to set Git Bash to automatically initialize `conda`, run the following commands in Git Bash:
+
+To set Git Bash to automatically activate `conda` whenever a terminal is opened, run the following commands:
 
 ```
 conda init bash
@@ -157,7 +160,7 @@ conda config --set auto_activate_base true
 ```
 <br>
 
-Once Git Bash has been re-opened, it should show you on start-up that you are in the `base` environment.
+Once Git Bash has been re-opened, it should show you on start-up that you are in the `base` environment (you should see "(base)" on the left).
 
 (primers-miniforge_setup10_windows)=
 ```{image} ../images/primers/miniforge_setup10_windows.png
