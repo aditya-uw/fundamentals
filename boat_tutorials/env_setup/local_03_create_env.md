@@ -78,11 +78,10 @@ Now that we have create a conda environment for running the tutorials, let's tes
 Check out Project [Jupyter](https://jupyter.org/) to understand the Jupyter ecosystem!
 :::
 
-Let's now we launch the JupyterLab:
-
-    ```shell
-    $ jupyter lab
-    ```
+Let's now launch the JupyterLab:
+```shell
+$ jupyter lab
+```
 
 You should be taken to a website as shown below:
 
