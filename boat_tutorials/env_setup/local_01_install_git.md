@@ -71,12 +71,11 @@ A command commonly found online is `winget install --id Git.Git -e --source wing
 
 ### Install using GUI
 
-[Download](https://git-scm.com/downloads) and run the Windows installer `.exe` file.  
+[Download](https://git-scm.com/downloads) and run the Windows installer (the `.exe` file).
 
-After double-clicking on the installer `.exe` file, you will first be prompted to enter your administrator password.
-Once the setup window has opened, complete the following steps:
+After double-clicking the installer, you will first be prompted to enter your administrator password. Follow the steps below:
 
-1) Read the license and click on "Next" to continue
+1) Read the license and click "Next" to continue
 
 (primers-git_setup1_windows)=
 ```{image} ../images/primers/git_setup1_windows.png
@@ -85,7 +84,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-2) Install Git in the default location and continue
+2) Install Git in the default location
 
 (primers-git_setup2_windows)=
 ```{image} ../images/primers/git_setup2_windows.png
@@ -94,7 +93,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-3) Leave the default components selected and continue
+3) Leave the default components selected
 
 (primers-git_setup3_windows)=
 ```{image} ../images/primers/git_setup3_windows.png
@@ -103,7 +102,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-4) Select the default Start Menu folder and continue
+4) Select the default Start Menu folder
 
 (primers-git_setup4_windows)=
 ```{image} ../images/primers/git_setup4_windows.png
@@ -112,7 +111,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-5) Change the default editor used by Git to nano which is a simpler alternative to vim
+5) Change the default editor used by Git to `nano` which is a simpler alternative to `vim`
 
 (primers-git_setup5_windows)=
 ```{image} ../images/primers/git_setup5_windows.png
@@ -130,7 +129,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-7) Allow Git from the command line and also 3rd-party software
+7) Select "Git from the command line and also from 3rd-party software"
 
 (primers-git_setup7_windows)=
 ```{image} ../images/primers/git_setup7_windows.png
@@ -139,7 +138,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-8) Use the OpenSSL library as the HTTPS transport backend
+8) Select "Use the OpenSSL library" as the HTTPS transport backend
 
 (primers-git_setup8_windows)=
 ```{image} ../images/primers/git_setup8_windows.png
@@ -148,7 +147,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-9) Checkout Windows-style, commit Unix-style line endings
+9) Select "Checkout Windows-style, commit Unix-style line endings"
 
 (primers-git_setup9_windows)=
 ```{image} ../images/primers/git_setup9_windows.png
@@ -166,7 +165,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-11) Select fast-forward or merge as the default behavior for git pull
+11) Select "Fast-forward or merge" as the default behavior for git pull
 
 (primers-git_setup11_windows)=
 ```{image} ../images/primers/git_setup11_windows.png
@@ -175,7 +174,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-12) Select Git Credential Manager
+12) Select "Git Credential Manager"
 
 (primers-git_setup12_windows)=
 ```{image} ../images/primers/git_setup12_windows.png
@@ -184,7 +183,7 @@ Once the setup window has opened, complete the following steps:
 ```
 <br>
 
-13) Enable file-system caching and click on "Install"
+13) Select "Enable file-system caching" and click "Install." Git will now begin to install and show a progress bar. 
 
 (primers-git_setup13_windows)=
 ```{image} ../images/primers/git_setup13_windows.png
@@ -192,7 +191,6 @@ Once the setup window has opened, complete the following steps:
 :align: center
 ```
 <br>
-Git will now begin to install and show a progress bar. 
 
 14) Click "Finish" once installed
 
@@ -209,9 +207,9 @@ If there are any Git installation steps not covered in the instructions above, w
 
 ### Post-installation
 
-Downloading Git will provide users with a new Git Bash terminal which recommend for setting up the `conda` environments and downloading the Git repositories as it allows the use of `conda` and `git`, and commands like `cd` and `ls`.
+Git provide users with a new "Git Bash" terminal that is useful for setting up the `conda` environments and interacting with the tutorial repository, because it allows using commands such as `cd` and `ls`.
 
-To launch Git Bash, go to the search bar in the Windows task bar and type "Git Bash".
+To launch Git Bash, go to the search bar in the Windows task bar and type "Git Bash."
 
 (primers-git_launch1_windows)=
 ```{image} ../images/primers/git_launch1_windows.png
@@ -228,5 +226,3 @@ When the Git Bash app appears, open it to launch Git Bash terminal.
 :align: center
 ```
 <br>
-
-Windows users will use this Git Bash terminal later to setup `conda`, create virtual environments, and `clone` Git repositories.
