@@ -1,7 +1,7 @@
 (env_setup-local)=
 # Local setup
 
-In this section, we will walk you through the steps needed to set up a local computational environment, which you can use to run all the tutorials (i.e. the widgets will be "alive" and responding to changing inputs).
+In this section, we will walk you through the steps needed to set up a computational environment on your own machine to run the tutorials (i.e. the widgets will be "alive" and responding to changing inputs).
 
 The steps are:
 - [Install Git](env_setup-local_git)

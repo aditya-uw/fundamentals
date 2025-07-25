@@ -2,77 +2,88 @@
 # Create a conda environment
 
 :::{note}
-Following the above setup instructions, Git Bash for Windows and Terminal for macOS & Linux will now work similarly with functionalities such as `conda`/`mamba`, `git`, `cd`, and `ls`. These programs will be referred to simply as "terminal" and the following instructions will be presented as applicable for an OS.
+All setup steps below will be run through a terminal. If you are on Linux or MacOS, this is the "Terminal" app. If you are on Windows and have followed the guide on this site to [install Git](env_setup-local_git), this is the Git Bash.
 :::
 
-We will now begin using the softwares we installed to clone the BOAT workshop Git repository, create a `conda` environment, and run code stored within a test Jupyter notebook.
+We will now use git and conda/mamba to clone the BOAT tutorial repository and create a computational environment to run a test Jupyter notebook to ensure everything works fine.
 
-## Cloning the Git repository
 
-As discussed, Git facilitates version control while GitHub facilitates sharing and collaborating on Git repositories. At the interface between Git and GitHub exists the `git clone` command which allows users to download Git repositories onto their computers when those repositories are hosted on GitHub and have been made accessible to them.
+## Clone the Git repository
 
-1) Launch terminal and navigate (using `cd`) into the folder which will be storing the BOAT workshop Git repository
+Git is a version control tool that can be used locally, while GitHub facilitates sharing and collaborating via web-hosted repositories. We can use the `git clone` command to download GitHub repositories to our own computer.
 
-2) Run the command:
+1) Launch a terminal and navigate (using `cd`) into the folder which you would like the BOAT tutoral repository to be save in. For example, the command below navigates into a directory called `git_repos`:
+```shell
+$ cd git_repos
 ```
-git clone https://github.com/BOAT-ocean-acoustics/fundamentals.git
+
+2) Run the command below to clone (download) the BOAT tutorial repository from GitHub. You should then have a new folder called `fundamentals` under `git_repos`.
+```shell
+$ git clone https://github.com/BOAT-ocean-acoustics/fundamentals.git
 ```
 
-The `fundamentals` Git repository will be dowloaded from the [GitHub URL](https://github.com/BOAT-ocean-acoustics/fundamentals.git) and contain the files stored within the published GitHub page.
-
-As the Git repository continues to be updated, be sure to stay up-to-date by running the following commands in terminal under the `fundamentals` repository:
+3) Navigate into the `fundamentals` repository directory (assuming you are in `git_repos`)
+```shell
+$ cd fundamentals
+```
 
 :::{caution}
-The below commands will overwrite any changes you may have made to any notebooks. If you want to keep your changed files, we recommend renaming the files or moving them outside of the `fundamentals` repository into another folder. The below commands will simply download those files again if Git does not find that they exist under the same name in the same location.
+If you have previously cloned the repository and want to get the latest version, run the following commands:
+```shell
+$ cd git_repos/fundamentals  # make sure you are in the tutorial repo
+$ git fetch origin
+$ git reset --hard origin/main
+```
+Note these commands will overwrite any changes you may have made in the repo folder. If you want to keep your changed files, rename the files or move them outside of the `fundamentals` folder.
 :::
 
+
+
+## Create a `conda` environment
+
+All coding projects have a minimal set of required packages necessary for the code to run successfully. `conda`/`mamba` can help us install the compatible versions of these packages in isolated, project-specific environments. Here, we will use `conda` to create an environment that contains all packages specified in `requirements.txt` in the tutorial repository.
+
+1) Assume the tutorial repository you just clone lives under the `git_repos` directory. In your terminal, navigate (using `cd`) into `git_repos/fundamentals/boat_tutorials`:
+```shell
+$ cd git_repos/fundamentals/boat_tutorials
 ```
-git fetch origin
-git reset --hard origin/main
-```
 
-## Creating the `conda` environment
-
-All coding projects have a minimal set of required packages necessary for the code to run successfully. `conda`/`mamba` helps in installing the required packages in isolated, project-specific environments. Git repositories containing code often provide a list of the required packages in files named `requirements.txt` or `environment.yml`.
-
-For `fundamentals` (the BOAT workshop Git repository), we have provided a `requirements.txt` under the `boat_tutorials` directory.
-
-1) Use terminal to navigate (using `cd`) into `fundamentals/boat_tutorials`
-
-2) Run the command to create the `conda` environment named `boat-fundamentals`:
-```
-mamba create --name boat-fundamentals --file requirements.txt
+2) Run the command to create a `conda` environment called `boat-fundamentals`:
+```shell
+$ mamba create --name boat-fundamentals --file requirements.txt
 ```
 
 :::{note}
-Mamba is a drop-in replacement for conda that is generally faster and better at resolving dependencies so we can use it particularly when doing computationally intensive tasks such as creating/removing environments.
+`Mamba` is a drop-in replacement for `conda` that is generally faster and better at resolving dependencies.
 :::
 
-3) The `boat-fundamentals` environment can be activated by running the command:
-```
-conda activate boat-fundamentals
-```
-
-## Launching a Jupyter notebook with JupyterLab
-
-Jupyter notebooks are interactive and shareable documents designed to integrate live code, equations, comments, and visualizations in a single file. For the tutorials of this workshop, Jupyter notebooks will be extensively used to introduce fundamental ocean acoustics concepts with interactive code outputs known as "widgets". JupyterLab will be the editing environment we will use to open, edit, and work through our Jupyter notebooks.
-
-1) Launch terminal and activate the `boat-fundamentals` environment
-```
-conda activate boat-fundamentals
+3) Activate the `boat-fundamentals` environment:
+```shell
+$ conda activate boat-fundamentals
 ```
 
-2) Use `ipykernel` to install a kernel for the `boat-fundamentals` environment
-```
-python -m ipykernel install --user --name=boat-fundamentals
-```
-
-3) Navigate into the `fundamentals` repository and launch the JupyterLab editor by running:
-```
-jupyter lab
+4) Use `ipykernel` to install a Jupyter kernel for the `boat-fundamentals` environment. See the next section for why we want to use Jupyter.
+```shell
+$ python -m ipykernel install --user --name=boat-fundamentals
 ```
 
-After running the above command, you should be taken to a website as shown below:
+
+## Launch a Jupyter notebook with JupyterLab
+
+Now that we have create a conda environment for running the tutorials, let's test it by trying to run a Jupyter Notebook to make sure everything is working fine.
+
+[Jupyter](https://jupyter.org/) Notebooks are interactive and shareable documents that integrates live code, equations, comments, and visualizations in a single file. The tutorial materials on this site are all executable Jupyter Notebooks with interactive "widgets" that can help us develop physical intuitions on ocean acoustics problems. We will run the notebooks using the JupyterLab interface.
+
+:::{tip}
+Check out Project [Jupyter](https://jupyter.org/) to understand the Jupyter ecosystem!
+:::
+
+Let's now we launch the JupyterLab:
+```shell
+$ jupyter lab
+```
+
+You should be taken to a website as shown below:
 
 (primers-jlab_launch1)=
 ```{image} ../images/primers/jlab_launch1.png
@@ -81,7 +92,7 @@ After running the above command, you should be taken to a website as shown below
 ```
 <br>
 
-If a website has not launched, go back to the same terminal window and copy-paste one of the provided URLs into a browser to access the website:
+If this website has not launched, go back to the same terminal window and the provided URL (typically http://localhost:8888) into a browser to access the website:
 
 (primers-jlab_launch2)=
 ```{image} ../images/primers/jlab_launch2.png
@@ -90,7 +101,7 @@ If a website has not launched, go back to the same terminal window and copy-past
 ```
 <br>
 
-4) Using JupyterLab's file explorer window, navigate to the `boat_tutorials/env_setup` folder where we have stored a Jupyter notebook titled `local_env_test.ipynb`. This notebook lets us test and ensure that the `boat-fundamentals` environment is set up on your machine.
+4) Using JupyterLab's file explorer window, navigate to the `boat_tutorials/env_setup` folder where we have stored a Jupyter notebook named `local_env_test.ipynb`. This notebook lets us test and ensure that the `boat-fundamentals` environment is working fine.
 
 (primers-jlab_launch3)=
 ```{image} ../images/primers/jlab_launch3.png
@@ -99,27 +110,29 @@ If a website has not launched, go back to the same terminal window and copy-past
 ```
 <br>
 
-After you have opened the Jupyter notebook, click on `Python 3 (ipykernel)` to select the kernel named `boat-fundamentals` for this notebook.
+After you have opened the Jupyter notebook, click `Python 3 (ipykernel)` on the upper-right corner and select the kernel named `boat-fundamentals` for this notebook.
 
-Now we can start working through the Jupyter notebook!
+Now you can start working through the Jupyter notebook!
 
-## Working through the Jupyter notebook
 
-As mentioned earlier, Jupyter notebooks are designed to integrate live code, notes, and visualizations in a single file. The main components of Jupyter notebooks are known as cells. Cells can either be designated as code cells (to hold Python code) or markdown cells (to hold Markdown notes).
 
-The notebook we are providing for this tutorial has 3 code cells and 3 markdown cells. As we will see, there will also be 1 interactive widget once we complete running the notebook. 
+## Work through the Jupyter notebook
 
-1) Run the markdown cell written to introduce the notebook with a title, overview, and explanation for what the next cell is expected to do
+As mentioned earlier, Jupyter notebooks integrates live code, notes, and visualizations in a single file. The main components of Jupyter notebooks are known as cells. Cells can be designated as "Code" cells (to hold programming code), "Markdown" cells (to hold Markdown notes), or "Raw" strings ().
 
-2) Run the code cell written to import all the packages that will be used throughout the BOAT workshop. Any errors with this cell would only occur if our `conda` environment was incorrectly set up
+The `local_env_test.ipynb` notebook has 3 code cells and 3 markdown cells, and will produce an interactive widget once we run through all cells in the notebook. 
 
-3) Run the markdown cell written to explain the plotting method that comes after
+1) Run the markdown cell that introduces the notebook with a title, overview, and explanation for what the next cell is expected to do.
 
-4) Run the code cell which contains the plotting method described in the previous cell. Running this cell will not print anything because this is simply a method definition meant to describe the code that will be run when the method is provided a parameter `std`
+2) Run the code cell that imports all packages needed for running code in this notebook. If errors occur when you run this cell, your `conda` environment is not set up correctly.
 
-5) Run the markdown cell written to explain the widget and range of values that can be provided for `std`
+3) Run the markdown cell that explains the plotting code that will be used later.
 
-6) Run the code cell designed to plot the interactive widget that should allow you to seamlessly play around with varying `std` values and seeing what the PDF curve looks like. Results for this cell will be similar to what's shown below:
+4) Run the code cell that contains the plotting code. Running this cell will not print anything because this is simply a function definition. The actual code content will be run as part of the widget in the last cell.
+
+5) Run the markdown cell that explains the widget and range of values that can be provided for the variable `std`, which is the standard deviation for normal distribution.
+
+6) Run the code cell that will produce an interactive widget, which would allow you to see how normal distribution changes with varying `std` value, like below:
 
 (primers-normal_slider)=
 ```{image} ../images/primers/normal_slider.gif
@@ -128,4 +141,4 @@ The notebook we are providing for this tutorial has 3 code cells and 3 markdown 
 ```
 <br>
 
-We have now successfully cloned the BOAT workshop Git repository titled `fundamentals`, successfully built a `conda` environment called `boat-fundamentals`, and worked through the Jupyter notebook called `local_env_test.ipynb`.
+If you can run the widget as seen above, you have everything you need to run all tutorials on this site!

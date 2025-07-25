@@ -5,7 +5,7 @@ format: jb-book
 root: landing
 parts:
   # LOCAL SETUP
-  - caption: Computing environment
+  - caption: How to run the tutorials
     chapters:
     # local setup
     - file: env_setup/local_00
