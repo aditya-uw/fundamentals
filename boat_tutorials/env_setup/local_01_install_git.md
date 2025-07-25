@@ -22,28 +22,21 @@ To launch terminal, go to Spotlight Search or Applications and find the Terminal
 
 ## Windows
 
-Git can be installed two different ways on Windows. The first way is through using Windows' command-line interface (CLI) which only requires a single command in the interface. The second way is through downloading the Windows installer with a graphical user interface (GUI). 
+Git can be installed in two different ways on Windows. The first is through using Windows' command-line interface (CLI). The second is by downloading the Windows installer with a graphical user interface (GUI). 
 
-:::{note}
-For first-time installation of Git, we recommend installation using the GUI to see where Git will be installed on your computer and to easily select the settings specific to your Git software.
-:::
+If this is the first you install Git, we recommend using the GUI installer to see where Git will be installed on your computer and to easily select the settings specific to your Git software.
+
+
 
 ### Install using CLI
 
-Git may be installed using a CLI as long as the user has the `winget` tool (installed by-default on Windows 10 and Windows 11), access to internet, and a CLI application like Windows Powershell or Command Prompt (**we will be using Windows Powershell**). 
+Git may be installed using a CLI as long as the user has the `winget` tool (installed by-default on Windows 10 and Windows 11), can access the internet, and have a CLI like Windows Powershell or Command Prompt (should be available by default). We will be using Windows Powershell in the screenshots below.
 
-:::{note}
-The provided command is designed to install Git with all the same settings as the GUI install. If you wish to install with any different settings, you may use [this documentation](https://gitforwindows.org/mapping-between-git-installer-gui-settings-and-command-line-arguments.html) to know how to incorporate your custom settings.
 
-A default Git install is commonly shown online as `winget install --id Git.Git -e --source winget`
-:::
-
-The command we recommend for installing Git using CLI is:
-```
-winget install --id Git.Git -e --source winget --custom '/o:Components=ext,gitlfs,assoc,assoc_sh /o:EditorOption=Nano /o:SSHOption=OpenSSH /o:CurlOption:OpenSSL /o:BashTerminalOption=MinTTY'
-```
-
-1) Launch your CLI and enter the command above
+1) Launch your CLI and enter the command below:
+    ```
+    winget install --id Git.Git -e --source winget --custom '/o:Components=ext,gitlfs,assoc,assoc_sh /o:EditorOption=Nano /o:SSHOption=OpenSSH /o:CurlOption:OpenSSL /o:BashTerminalOption=MinTTY'
+    ```
 
 (primers-winget_git_setup1)=
 ```{image} ../images/primers/winget_git_setup1.png
@@ -67,6 +60,14 @@ winget install --id Git.Git -e --source winget --custom '/o:Components=ext,gitlf
 :align: center
 ```
 <br>
+
+:::{note}
+The command provided above installs Git with the same settings as the GUI install explained in the section below. If you want to install with different settings, you can refer to [this guide](https://gitforwindows.org/mapping-between-git-installer-gui-settings-and-command-line-arguments.html) to configure the settings.
+
+A command commonly found online is `winget install --id Git.Git -e --source winget`
+:::
+
+
 
 ### Install using GUI
 
