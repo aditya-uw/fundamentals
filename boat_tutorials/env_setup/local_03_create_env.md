@@ -8,7 +8,7 @@ All setup steps below will be run through a terminal. If you are on Linux or Mac
 We will now use git and conda/mamba to clone the BOAT tutorial repository and create a computational environment to run a test Jupyter notebook to ensure everything works fine.
 
 
-## Clone the Git repository
+## Clone the tutorial repository
 
 Git is a version control tool that can be used locally, while GitHub facilitates sharing and collaborating via web-hosted repositories. We can use the `git clone` command to download GitHub repositories to our own computer.
 
@@ -116,7 +116,7 @@ Now you can start working through the Jupyter notebook!
 
 
 
-## Work through the Jupyter notebook
+## Work through the test Jupyter notebook
 
 As mentioned earlier, Jupyter notebooks integrates live code, notes, and visualizations in a single file. The main components of Jupyter notebooks are known as cells. Cells can be designated as "Code" cells (to hold programming code), "Markdown" cells (to hold Markdown notes), or "Raw" strings ().
 
