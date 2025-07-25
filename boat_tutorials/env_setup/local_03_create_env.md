@@ -79,6 +79,7 @@ Check out Project [Jupyter](https://jupyter.org/) to understand the Jupyter ecos
 :::
 
 Let's now we launch the JupyterLab:
+
     ```shell
     $ jupyter lab
     ```
