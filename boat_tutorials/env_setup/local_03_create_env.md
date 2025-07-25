@@ -120,6 +120,13 @@ Now you can start working through the Jupyter notebook!
 
 As mentioned earlier, Jupyter notebooks integrates live code, notes, and visualizations in a single file. The main components of Jupyter notebooks are known as cells. Cells can be designated as "Code" cells (to hold programming code), "Markdown" cells (to hold Markdown notes), or "Raw" strings.
 
+(primers-jlab_launch4)=
+```{image} ../images/primers/jlab_launch4.png
+:width: 900px
+:align: center
+```
+<br>
+
 The `local_env_test.ipynb` notebook has 3 code cells and 3 markdown cells, and will produce an interactive widget once we run through all cells in the notebook. 
 
 1) Run the markdown cell that introduces the notebook with a title, overview, and explanation for what the next cell is expected to do.
