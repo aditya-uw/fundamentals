@@ -30,7 +30,7 @@ $ bash Miniforge3-MacOSX-arm64.sh # (i.e., run `bash` on the installer's file na
 You may need to `cd` (change directory) into the folder that contains your downloaded file first. For example, below we `cd` into the `~/Downloads` first before running the command:
 
 (primers-miniforge_setup1_macOS)=
-```{image} ../images/primers/miniforge_setup1_macOS.png
+```{image} ../images/env_setup/miniforge_setup1_macOS.png
 :width: 900px
 :align: center
 ```
@@ -42,7 +42,7 @@ After running the above commands, complete the following steps from the installe
 1) Agree to license terms and confirm the default location for install. After pressing ENTER, Miniforge will begin installing the required packages and solvers.
 
 (primers-miniforge_setup2_macOS)=
-```{image} ../images/primers/miniforge_setup2_macOS.png
+```{image} ../images/env_setup/miniforge_setup2_macOS.png
 :width: 900px
 :align: center
 ```
@@ -51,7 +51,7 @@ After running the above commands, complete the following steps from the installe
 2) Type `yes` if prompted "Do you wish to update your shell profile to automatically initialize conda?" Automatically initializing `conda` makes it easier to use.
 
 (primers-miniforge_setup3_macOS)=
-```{image} ../images/primers/miniforge_setup3_macOS.png
+```{image} ../images/env_setup/miniforge_setup3_macOS.png
 :width: 900px
 :align: center
 ```
@@ -61,7 +61,7 @@ After running the above commands, complete the following steps from the installe
 3) **After Miniforge has finished installing, make sure to close and re-open the terminal for changes to take effect.**
 
 (primers-miniforge_setup4_macOS)=
-```{image} ../images/primers/miniforge_setup4_macOS.png
+```{image} ../images/env_setup/miniforge_setup4_macOS.png
 :width: 900px
 :align: center
 ```
@@ -74,7 +74,7 @@ After running the above commands, complete the following steps from the installe
 Download and run the Windows installer (the `.exe` file).
 
 (primers-miniforge_setup1_windows)=
-```{image} ../images/primers/miniforge_setup1_windows.png
+```{image} ../images/env_setup/miniforge_setup1_windows.png
 :width: 700px
 :align: center
 ```
@@ -85,7 +85,7 @@ Follow the steps below as you go through the installer:
 1) Agree to the License Agreement
 
 (primers-miniforge_setup2_windows)=
-```{image} ../images/primers/miniforge_setup2_windows.png
+```{image} ../images/env_setup/miniforge_setup2_windows.png
 :width: 700px
 :align: center
 ```
@@ -94,7 +94,7 @@ Follow the steps below as you go through the installer:
 2) Install for "Just Me (recommended)"
 
 (primers-miniforge_setup3_windows)=
-```{image} ../images/primers/miniforge_setup3_windows.png
+```{image} ../images/env_setup/miniforge_setup3_windows.png
 :width: 700px
 :align: center
 ```
@@ -103,7 +103,7 @@ Follow the steps below as you go through the installer:
 3) Install in the default folder
 
 (primers-miniforge_setup4_windows)=
-```{image} ../images/primers/miniforge_setup4_windows.png
+```{image} ../images/env_setup/miniforge_setup4_windows.png
 :width: 700px
 :align: center
 ```
@@ -112,7 +112,7 @@ Follow the steps below as you go through the installer:
 4) Check the following options to ensure `conda`/`mamba` can be accessed from Windows terminal
 
 (primers-miniforge_setup5_windows)=
-```{image} ../images/primers/miniforge_setup5_windows.png
+```{image} ../images/env_setup/miniforge_setup5_windows.png
 :width: 700px
 :align: center
 ```
@@ -121,14 +121,14 @@ Follow the steps below as you go through the installer:
 5) Wait for installation and click "Next" and "Finish"
 
 (primers-miniforge_setup6_windows)=
-```{image} ../images/primers/miniforge_setup6_windows.png
+```{image} ../images/env_setup/miniforge_setup6_windows.png
 :width: 700px
 :align: center
 ```
 <br>
 
 (primers-miniforge_setup7_windows)=
-```{image} ../images/primers/miniforge_setup7_windows.png
+```{image} ../images/env_setup/miniforge_setup7_windows.png
 :width: 700px
 :align: center
 ```
@@ -147,14 +147,14 @@ conda config --set auto_activate_base true
 **Be sure to close and re-open GitBash after these commands for the changes to take effect.**
 
 (primers-miniforge_setup8_windows)=
-```{image} ../images/primers/miniforge_setup8_windows.png
+```{image} ../images/env_setup/miniforge_setup8_windows.png
 :width: 900px
 :align: center
 ```
 <br>
 
 (primers-miniforge_setup9_windows)=
-```{image} ../images/primers/miniforge_setup9_windows.png
+```{image} ../images/env_setup/miniforge_setup9_windows.png
 :width: 900px
 :align: center
 ```
@@ -163,7 +163,7 @@ conda config --set auto_activate_base true
 Once Git Bash has been re-opened, it should show you on start-up that you are in the `base` environment (you should see "(base)" on the left).
 
 (primers-miniforge_setup10_windows)=
-```{image} ../images/primers/miniforge_setup10_windows.png
+```{image} ../images/env_setup/miniforge_setup10_windows.png
 :width: 900px
 :align: center
 ```

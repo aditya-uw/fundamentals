@@ -14,7 +14,7 @@ Terminals come pre-installed with Git so there are no steps required to install 
 To launch terminal, go to Spotlight Search or Applications and find the Terminal app to open.
 
 (primers-git_launch1_macOS)=
-```{image} ../images/primers/git_launch1_macOS.png
+```{image} ../images/env_setup/git_launch1_macOS.png
 :width: 100px
 :align: center
 ```
@@ -39,14 +39,14 @@ Git may be installed using a CLI as long as the user has the `winget` tool (inst
     ```
 
 (primers-winget_git_setup1)=
-```{image} ../images/primers/winget_git_setup1.png
+```{image} ../images/env_setup/winget_git_setup1.png
 :width: 700px
 :align: center
 ```
 <br>
 
 (primers-winget_git_setup2)=
-```{image} ../images/primers/winget_git_setup2.png
+```{image} ../images/env_setup/winget_git_setup2.png
 :width: 900px
 :align: center
 ```
@@ -55,7 +55,7 @@ Git may be installed using a CLI as long as the user has the `winget` tool (inst
 2) You will be prompted for administrator password and `winget` will proceed to download and install Git
 
 (primers-winget_git_setup3)=
-```{image} ../images/primers/winget_git_setup3.png
+```{image} ../images/env_setup/winget_git_setup3.png
 :width: 900px
 :align: center
 ```
@@ -78,7 +78,7 @@ After double-clicking the installer, you will first be prompted to enter your ad
 1) Read the license and click "Next" to continue
 
 (primers-git_setup1_windows)=
-```{image} ../images/primers/git_setup1_windows.png
+```{image} ../images/env_setup/git_setup1_windows.png
 :width: 700px
 :align: center
 ```
@@ -87,7 +87,7 @@ After double-clicking the installer, you will first be prompted to enter your ad
 2) Install Git in the default location
 
 (primers-git_setup2_windows)=
-```{image} ../images/primers/git_setup2_windows.png
+```{image} ../images/env_setup/git_setup2_windows.png
 :width: 700px
 :align: center
 ```
@@ -96,7 +96,7 @@ After double-clicking the installer, you will first be prompted to enter your ad
 3) Leave the default components selected
 
 (primers-git_setup3_windows)=
-```{image} ../images/primers/git_setup3_windows.png
+```{image} ../images/env_setup/git_setup3_windows.png
 :width: 700px
 :align: center
 ```
@@ -105,7 +105,7 @@ After double-clicking the installer, you will first be prompted to enter your ad
 4) Select the default Start Menu folder
 
 (primers-git_setup4_windows)=
-```{image} ../images/primers/git_setup4_windows.png
+```{image} ../images/env_setup/git_setup4_windows.png
 :width: 700px
 :align: center
 ```
@@ -114,7 +114,7 @@ After double-clicking the installer, you will first be prompted to enter your ad
 5) Change the default editor used by Git to `nano` which is a simpler alternative to `vim`
 
 (primers-git_setup5_windows)=
-```{image} ../images/primers/git_setup5_windows.png
+```{image} ../images/env_setup/git_setup5_windows.png
 :width: 700px
 :align: center
 ```
@@ -123,7 +123,7 @@ After double-clicking the installer, you will first be prompted to enter your ad
 6) Override the default branch name for new repositories to be "main"
 
 (primers-git_setup6_windows)=
-```{image} ../images/primers/git_setup6_windows.png
+```{image} ../images/env_setup/git_setup6_windows.png
 :width: 700px
 :align: center
 ```
@@ -132,7 +132,7 @@ After double-clicking the installer, you will first be prompted to enter your ad
 7) Select "Git from the command line and also from 3rd-party software"
 
 (primers-git_setup7_windows)=
-```{image} ../images/primers/git_setup7_windows.png
+```{image} ../images/env_setup/git_setup7_windows.png
 :width: 700px
 :align: center
 ```
@@ -141,7 +141,7 @@ After double-clicking the installer, you will first be prompted to enter your ad
 8) Select "Use the OpenSSL library" as the HTTPS transport backend
 
 (primers-git_setup8_windows)=
-```{image} ../images/primers/git_setup8_windows.png
+```{image} ../images/env_setup/git_setup8_windows.png
 :width: 700px
 :align: center
 ```
@@ -150,7 +150,7 @@ After double-clicking the installer, you will first be prompted to enter your ad
 9) Select "Checkout Windows-style, commit Unix-style line endings"
 
 (primers-git_setup9_windows)=
-```{image} ../images/primers/git_setup9_windows.png
+```{image} ../images/env_setup/git_setup9_windows.png
 :width: 700px
 :align: center
 ```
@@ -159,7 +159,7 @@ After double-clicking the installer, you will first be prompted to enter your ad
 10) Use MinTTY as the terminal emulator to use with Git Bash
 
 (primers-git_setup10_windows)=
-```{image} ../images/primers/git_setup10_windows.png
+```{image} ../images/env_setup/git_setup10_windows.png
 :width: 700px
 :align: center
 ```
@@ -168,7 +168,7 @@ After double-clicking the installer, you will first be prompted to enter your ad
 11) Select "Fast-forward or merge" as the default behavior for git pull
 
 (primers-git_setup11_windows)=
-```{image} ../images/primers/git_setup11_windows.png
+```{image} ../images/env_setup/git_setup11_windows.png
 :width: 700px
 :align: center
 ```
@@ -177,7 +177,7 @@ After double-clicking the installer, you will first be prompted to enter your ad
 12) Select "Git Credential Manager"
 
 (primers-git_setup12_windows)=
-```{image} ../images/primers/git_setup12_windows.png
+```{image} ../images/env_setup/git_setup12_windows.png
 :width: 700px
 :align: center
 ```
@@ -186,7 +186,7 @@ After double-clicking the installer, you will first be prompted to enter your ad
 13) Select "Enable file-system caching" and click "Install." Git will now begin to install and show a progress bar. 
 
 (primers-git_setup13_windows)=
-```{image} ../images/primers/git_setup13_windows.png
+```{image} ../images/env_setup/git_setup13_windows.png
 :width: 700px
 :align: center
 ```
@@ -195,7 +195,7 @@ After double-clicking the installer, you will first be prompted to enter your ad
 14) Click "Finish" once installed
 
 (primers-git_setup14_windows)=
-```{image} ../images/primers/git_setup14_windows.png
+```{image} ../images/env_setup/git_setup14_windows.png
 :width: 700px
 :align: center
 ```
@@ -212,7 +212,7 @@ Git provide users with a new "Git Bash" terminal that is useful for setting up t
 To launch Git Bash, go to the search bar in the Windows task bar and type "Git Bash."
 
 (primers-git_launch1_windows)=
-```{image} ../images/primers/git_launch1_windows.png
+```{image} ../images/env_setup/git_launch1_windows.png
 :width: 700px
 :align: center
 ```
@@ -221,7 +221,7 @@ To launch Git Bash, go to the search bar in the Windows task bar and type "Git B
 When the Git Bash app appears, open it to launch Git Bash terminal.
 
 (primers-git_launch2_windows)=
-```{image} ../images/primers/git_launch2_windows.png
+```{image} ../images/env_setup/git_launch2_windows.png
 :width: 900px
 :align: center
 ```

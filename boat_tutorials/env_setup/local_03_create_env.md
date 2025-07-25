@@ -86,7 +86,7 @@ Let's now we launch the JupyterLab:
 You should be taken to a website as shown below:
 
 (primers-jlab_launch1)=
-```{image} ../images/primers/jlab_launch1.png
+```{image} ../images/env_setup/jlab_launch1.png
 :width: 900px
 :align: center
 ```
@@ -95,7 +95,7 @@ You should be taken to a website as shown below:
 If this website has not launched, go back to the same terminal window and the provided URL (typically http://localhost:8888) into a browser to access the website:
 
 (primers-jlab_launch2)=
-```{image} ../images/primers/jlab_launch2.png
+```{image} ../images/env_setup/jlab_launch2.png
 :width: 900px
 :align: center
 ```
@@ -104,7 +104,7 @@ If this website has not launched, go back to the same terminal window and the pr
 4) Using JupyterLab's file explorer window, navigate to the `boat_tutorials/env_setup` folder where we have stored a Jupyter notebook named `local_env_test.ipynb`. This notebook lets us test and ensure that the `boat-fundamentals` environment is working fine.
 
 (primers-jlab_launch3)=
-```{image} ../images/primers/jlab_launch3.png
+```{image} ../images/env_setup/jlab_launch3.png
 :width: 900px
 :align: center
 ```
@@ -121,7 +121,7 @@ Now you can start working through the Jupyter notebook!
 As mentioned earlier, Jupyter notebooks integrates live code, notes, and visualizations in a single file. The main components of Jupyter notebooks are known as cells. Cells can be designated as "Code" cells (to hold programming code), "Markdown" cells (to hold Markdown notes), or "Raw" strings.
 
 (primers-jlab_launch4)=
-```{image} ../images/primers/jlab_launch4.png
+```{image} ../images/env_setup/jlab_launch4.png
 :width: 900px
 :align: center
 ```
@@ -142,7 +142,7 @@ The `local_env_test.ipynb` notebook has 3 code cells and 3 markdown cells, and w
 6) Run the code cell that will produce an interactive widget, which would allow you to see how normal distribution changes with varying `std` value, like below:
 
 (primers-normal_slider)=
-```{image} ../images/primers/normal_slider.gif
+```{image} ../images/env_setup/normal_slider.gif
 :width: 700px
 :align: center
 ```
